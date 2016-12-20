@@ -1,3 +1,32 @@
+body {
+  -webkit-font-smoothing: antialiased; }
 
+.hero-container {
+  height: 100vh;
+  position: relative;
+  background-image: url("../img/background-pic.png");
+  background-position: center;
+  background-size: cover; }
+  .hero-container img {
+    padding: 20px; }
+
+.hero-text-hold {
+  position: absolute;
+  top: 22%;
+  width: 100%; }
+  .hero-text-hold .hero-text {
+    text-align: center; }
+  .hero-text-hold h1 {
+    color: white;
+    font-family: 'Yeseva One', cursive;
+    font-size: 8em;
+    display: block;
+    margin: auto;
+    letter-spacing: 4px; }
+  .hero-text-hold img {
+    width: 25em;
+    height: auto;
+    margin-top: -35px;
+    margin-bottom: -35px; }
 
 /*# sourceMappingURL=app.css.map */
