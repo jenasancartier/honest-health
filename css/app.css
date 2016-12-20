@@ -28,5 +28,15 @@ body {
     height: auto;
     margin-top: -35px;
     margin-bottom: -35px; }
+  .hero-text-hold span {
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around; }
+  .hero-text-hold .tag-line {
+    height: 4px;
+    background: white;
+    width: 20px; }
 
 /*# sourceMappingURL=app.css.map */

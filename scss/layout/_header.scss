@@ -30,5 +30,16 @@
     margin-top: -35px;
     margin-bottom: -35px;
   }
-
+  span {
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .tag-line {
+    height: 4px;
+    background: white;
+    width: 20px;
+  }
 }
