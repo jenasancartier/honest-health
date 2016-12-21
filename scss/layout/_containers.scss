@@ -8,7 +8,7 @@
     flex-wrap: wrap;
     .icon-column {
       // border: 1px solid $moderngreen;
-      height: 25%;
+      height: 250px;
       flex-grow:1;
       flex-basis: 33.33%;
       justify-content: center;
@@ -41,17 +41,60 @@
     margin: auto;
     width: 85vw;
     padding: 35px;
-    color: white;
+    // color: white;
     h5 {
+      color: white;
       text-align: center;
+      margin-bottom: 1.4em;
+      font-family: 'Merriweather', serif;
+
     }
     .mission-columns {
       display: flex;
+      flex-wrap: wrap;
+      flex-grow: 1;
       justify-content: center;
+      justify-content: space-around;
+
     }
     .mission-box {
       width: 40%;
-
+      background: white;
+      border-radius: 3px;
+      padding: 25px;
+      @media (max-width: 760px) {
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        margin-top: 20px;
+      }
     }
+  }
+}
+
+.strain-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  height: 450px;
+  .strain {
+    flex-grow: 1;
+    border: 1px solid black;
+  }
+  .strain:nth-of-type(1) {
+    flex-basis: 50%;
+  }
+  .strain:nth-of-type(2) {
+    flex-basis: 25%;
+  }
+  .strain:nth-of-type(3) {
+    flex-basis: 25%;
+  }
+  .strain:nth-of-type(4) {
+    flex-basis: 25%;
+  }
+  .strain:nth-of-type(5) {
+    flex-basis: 25%;
+  }
+  .strain:nth-of-type(6) {
+    flex-basis: 50%;
   }
 }

@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-wrap: wrap; }
     .icon-section .icon-container .icon-column {
-      height: 25%;
+      height: 250px;
       flex-grow: 1;
       flex-basis: 33.33%;
       justify-content: center;
@@ -45,15 +45,48 @@ body {
     display: block;
     margin: auto;
     width: 85vw;
-    padding: 35px;
-    color: white; }
+    padding: 35px; }
     .mission-container .mission-section h5 {
-      text-align: center; }
+      color: white;
+      text-align: center;
+      margin-bottom: 1.4em;
+      font-family: 'Merriweather', serif; }
     .mission-container .mission-section .mission-columns {
       display: flex;
-      justify-content: center; }
+      flex-wrap: wrap;
+      flex-grow: 1;
+      justify-content: center;
+      justify-content: space-around; }
     .mission-container .mission-section .mission-box {
-      width: 40%; }
+      width: 40%;
+      background: white;
+      border-radius: 3px;
+      padding: 25px; }
+      @media (max-width: 760px) {
+        .mission-container .mission-section .mission-box {
+          flex-wrap: wrap;
+          flex-basis: 100%;
+          margin-top: 20px; } }
+
+.strain-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  height: 450px; }
+  .strain-gallery .strain {
+    flex-grow: 1;
+    border: 1px solid black; }
+  .strain-gallery .strain:nth-of-type(1) {
+    flex-basis: 50%; }
+  .strain-gallery .strain:nth-of-type(2) {
+    flex-basis: 25%; }
+  .strain-gallery .strain:nth-of-type(3) {
+    flex-basis: 25%; }
+  .strain-gallery .strain:nth-of-type(4) {
+    flex-basis: 25%; }
+  .strain-gallery .strain:nth-of-type(5) {
+    flex-basis: 25%; }
+  .strain-gallery .strain:nth-of-type(6) {
+    flex-basis: 50%; }
 
 .hero-container {
   height: 100vh;
@@ -72,7 +105,7 @@ body {
   justify-content: center; }
 
 .hero-text-hold {
-  margin-top: 1vh;
+  margin-top: 10vh;
   border: 1px solid white;
   width: auto;
   height: 50%;
