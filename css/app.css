@@ -30,8 +30,9 @@ body {
           flex-wrap: wrap;
           flex-basis: 100%; } }
       .icon-section .icon-container .icon-column p {
-        font-family: 'Merriweather', serif;
-        color: #003226;
+        font-family: 'Merriweather Sans', sans-serif;
+        color: #4CBF8B;
+        font-weight: bolder;
         font-size: 1.3em; }
       .icon-section .icon-container .icon-column img {
         width: 125px;
@@ -52,6 +53,9 @@ body {
   .mission-container .mission-section h6 {
     font-size: 24px;
     font-family: 'Merriweather Sans', sans-serif; }
+  .mission-container .mission-section p {
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-top: 25px; }
   .mission-container .mission-section .mission-columns {
     display: flex;
     flex-wrap: wrap;
@@ -181,7 +185,7 @@ body {
   justify-content: center; }
 
 .hero-text-hold {
-  margin-top: 10vh;
+  margin-top: 7vh;
   border: 1px solid white;
   width: auto;
   height: 50%;

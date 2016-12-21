@@ -19,8 +19,9 @@
         flex-basis: 100%;
       }
       p {
-        font-family: 'Merriweather', serif;
-        color: $blackgreen;
+        font-family: 'Merriweather Sans', sans-serif;
+        color: $moderngreen;
+        font-weight: bolder;
         font-size: 1.3em;
       }
       img {
@@ -51,6 +52,10 @@
     h6 {
       font-size: 24px;
       font-family: 'Merriweather Sans', sans-serif;
+    }
+    p {
+      font-family: 'Merriweather Sans', sans-serif;
+      margin-top: 25px;
     }
     .mission-columns {
       display: flex;
