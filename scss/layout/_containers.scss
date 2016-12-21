@@ -1,0 +1,10 @@
+.icon-section {
+  display: flex;
+  .icon-container {
+    border: 1px solid black;
+    height: 350px;
+    justify-content: center;
+    flex-grow:1;
+    
+  }
+}
