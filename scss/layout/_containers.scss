@@ -84,7 +84,7 @@
       top: 0px;
       width: 100%;
       height: 500px;
-      padding: 10px;
+      // padding: 10px;
       text-align: center;
       font-size: 16px;
       font-family: 'Merriweather Sans', sans-serif;
@@ -93,9 +93,9 @@
       -webkit-transition: -webkit-transform 0.75s;
       transition: transform 0.75s;
       &:hover {
-        -ms-transform: translateY(-260px);
-        -webkit-transform: translateY(-260px);
-        transform: translateY(-260px);
+        -ms-transform: translateY(-250px);
+        -webkit-transform: translateY(-250px);
+        transform: translateY(-250px);
       }
     }
     .details-container {

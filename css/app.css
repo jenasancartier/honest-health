@@ -81,7 +81,6 @@ body {
       top: 0px;
       width: 100%;
       height: 500px;
-      padding: 10px;
       text-align: center;
       font-size: 16px;
       font-family: 'Merriweather Sans', sans-serif;
@@ -90,9 +89,9 @@ body {
       -webkit-transition: -webkit-transform 0.75s;
       transition: transform 0.75s; }
       .strain-gallery .strain .strain-info:hover {
-        -ms-transform: translateY(-260px);
-        -webkit-transform: translateY(-260px);
-        transform: translateY(-260px); }
+        -ms-transform: translateY(-250px);
+        -webkit-transform: translateY(-250px);
+        transform: translateY(-250px); }
     .strain-gallery .strain .details-container {
       background-color: rgba(76, 191, 139, 0.7);
       height: 250px;
