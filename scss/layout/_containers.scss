@@ -1,10 +1,12 @@
-.icon-section {
+.icon-container {
   display: flex;
-  .icon-container {
+  .icon-column {
     border: 1px solid black;
-    height: 350px;
-    justify-content: center;
+    height: 300px;
+    flex-basis: 33.33;
     flex-grow:1;
-    
+    flex-basis: 100%;
+    justify-content: center;
+    text-align: center;
   }
 }
