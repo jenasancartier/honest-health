@@ -65,10 +65,10 @@
     .mission-box {
       width: 40%;
       height: 40%;
-      background: $moderngreen;
+      background: linear-gradient(220deg, $teal, $moderngreen);
       color: white;
       text-align: center;
-      border-radius: 3px;
+      border-radius: 2px;
       padding: 25px;
       @media (max-width: 760px) {
         flex-wrap: wrap;
@@ -194,7 +194,7 @@
 
 .about-container {
   background: linear-gradient(135deg, $darkblue, $moderngreen);
-  opacity: 0.8;
+  opacity: 0.9;
   position: relative;
   // background: rgba(66, 69, 100, 0.3);
   &::after {
@@ -214,16 +214,25 @@
     .grower-pic {
       height: 250px;
       width: 250px;
-      margin-right: 40px;
+      margin-left: 40px;
       background-image: url("../img/nolan.jpg");
       background-position: center;
       background-size: cover;
       border-radius: 50%;
     }
     .grower-details {
+      flex-grow: 1;
+      margin-top: 15px;
+      text-align: center;
+      font-family: 'Merriweather Sans', sans-serif;
+      font-weight: bolder;
       height: 250px;
       flex-basis: 50%;
       color: white;
+      h5 {
+        font-family: 'Merriweather', serif;
+        font-size: 30px;
+      }
     }
   }
 }
