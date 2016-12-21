@@ -193,6 +193,9 @@
 // }
 
 .about-container {
+  background: -webkit-linear-gradient(135deg, $darkblue, $moderngreen);
+  background: -o-linear-gradient(135deg, $darkblue, $moderngreen);
+  background: -moz-linear-gradient(135deg, $darkblue, $moderngreen);
   background: linear-gradient(135deg, $darkblue, $moderngreen);
   opacity: 0.9;
   position: relative;

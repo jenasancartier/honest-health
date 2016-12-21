@@ -2,6 +2,9 @@ footer {
   text-align: center;
   font-size: 11px;
   font-family: 'Merriweather Sans', sans-serif;
+  background: -webkit-linear-gradient(135deg, $darkblue, $seablue);
+  background: -o-linear-gradient(135deg, $darkblue, $seablue);
+  background: -moz-linear-gradient(135deg, $darkblue, $seablue);
   background: linear-gradient(135deg, $darkblue, $seablue);
   height: 65px;
   color: white;
