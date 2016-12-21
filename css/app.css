@@ -1,4 +1,4 @@
-.hero-container::after {
+.about-container::after, .hero-container::after {
   content: "";
   opacity: 0.8;
   top: 0;
@@ -37,44 +37,46 @@ body {
       .icon-section .icon-container .icon-column img {
         width: 125px;
         height: auto;
-        margin-top: 8%;
+        margin-top: 4%;
         padding: 10px; }
 
-.mission-container .mission-section {
-  display: block;
-  margin: auto;
-  width: 95vw;
-  padding: 35px; }
-  .mission-container .mission-section h5 {
-    color: #4CBF8B;
-    text-align: center;
-    margin-bottom: 1.4em;
-    font-family: 'Merriweather', serif; }
-  .mission-container .mission-section h6 {
-    font-size: 24px;
-    font-family: 'Merriweather Sans', sans-serif; }
-  .mission-container .mission-section p {
-    font-family: 'Merriweather Sans', sans-serif;
-    margin-top: 25px; }
-  .mission-container .mission-section .mission-columns {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    justify-content: center;
-    justify-content: space-around; }
-  .mission-container .mission-section .mission-box {
-    width: 40%;
-    height: 40%;
-    background: #4CBF8B;
-    color: white;
-    text-align: center;
-    border-radius: 3px;
-    padding: 25px; }
-    @media (max-width: 760px) {
-      .mission-container .mission-section .mission-box {
-        flex-wrap: wrap;
-        flex-basis: 100%;
-        margin-top: 20px; } }
+.mission-container {
+  margin-bottom: 30px; }
+  .mission-container .mission-section {
+    display: block;
+    margin: auto;
+    width: 95vw;
+    padding: 35px; }
+    .mission-container .mission-section h5 {
+      color: #4CBF8B;
+      text-align: center;
+      margin-bottom: 1.4em;
+      font-family: 'Merriweather', serif; }
+    .mission-container .mission-section h6 {
+      font-size: 24px;
+      font-family: 'Merriweather Sans', sans-serif; }
+    .mission-container .mission-section p {
+      font-family: 'Merriweather Sans', sans-serif;
+      margin-top: 25px; }
+    .mission-container .mission-section .mission-columns {
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      justify-content: center;
+      justify-content: space-around; }
+    .mission-container .mission-section .mission-box {
+      width: 40%;
+      height: 40%;
+      background: linear-gradient(220deg, #23B8BB, #4CBF8B);
+      color: white;
+      text-align: center;
+      border-radius: 2px;
+      padding: 25px; }
+      @media (max-width: 760px) {
+        .mission-container .mission-section .mission-box {
+          flex-wrap: wrap;
+          flex-basis: 100%;
+          margin-top: 20px; } }
 
 .strain-gallery {
   display: flex;
@@ -168,10 +170,69 @@ body {
       .strain-gallery .strain:nth-of-type(6) {
         flex-basis: 100%; } }
 
+.about-container {
+  background: -webkit-linear-gradient(135deg, #155A97, #4CBF8B);
+  background: -o-linear-gradient(135deg, #155A97, #4CBF8B);
+  background: -moz-linear-gradient(135deg, #155A97, #4CBF8B);
+  background: linear-gradient(135deg, #155A97, #4CBF8B);
+  opacity: 0.9;
+  position: relative; }
+  .about-container::after {
+    background-image: url("../img/wood-bg.jpg");
+    background-position: center;
+    background-size: cover; }
+  .about-container .about-section {
+    padding: 45px;
+    width: 85vw;
+    display: block;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .about-container .about-section .grower-pic {
+      height: 250px;
+      width: 250px;
+      margin-left: 40px;
+      background-image: url("../img/nolan.jpg");
+      background-position: center;
+      background-size: cover;
+      border-radius: 50%; }
+    .about-container .about-section .grower-details {
+      flex-grow: 1;
+      margin-top: 15px;
+      text-align: center;
+      font-family: 'Merriweather Sans', sans-serif;
+      height: 250px;
+      flex-basis: 50%;
+      color: white; }
+      .about-container .about-section .grower-details h5 {
+        font-family: 'Merriweather', serif;
+        font-size: 30px;
+        font-weight: bolder; }
+      .about-container .about-section .grower-details p {
+        font-size: 16px; }
+
+footer {
+  text-align: center;
+  font-size: 11px;
+  font-family: 'Merriweather Sans', sans-serif;
+  background: -webkit-linear-gradient(135deg, #155A97, #1D97BC);
+  background: -o-linear-gradient(135deg, #155A97, #1D97BC);
+  background: -moz-linear-gradient(135deg, #155A97, #1D97BC);
+  background: linear-gradient(135deg, #155A97, #1D97BC);
+  height: 65px;
+  color: white; }
+  footer p {
+    padding-top: 25px;
+    margin: 0; }
+
 .hero-container {
   height: 100vh;
   position: relative;
   background: rgba(66, 69, 100, 0.3); }
+  @media (max-width: 800px) {
+    .hero-container {
+      height: 65vh; } }
   .hero-container::after {
     background-image: url("../img/background-pic.png");
     background-position: center;
@@ -190,9 +251,10 @@ body {
   width: auto;
   height: 50%;
   padding: 25px; }
-  @media (min-width: 750px) {
+  @media (min-width: 770px) {
     .hero-text-hold {
       width: 50vw;
+      margin-top: 2vh;
       height: auto; } }
   .hero-text-hold .hero-text {
     text-align: center; }
