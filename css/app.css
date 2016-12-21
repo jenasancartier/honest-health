@@ -41,13 +41,20 @@ body {
   width: auto;
   height: 50%;
   padding: 25px; }
+  @media (min-width: 750px) {
+    .hero-text-hold {
+      width: 50vw;
+      height: auto; } }
   .hero-text-hold .hero-text {
     text-align: center; }
   .hero-text-hold h1 {
     color: white;
     font-family: 'Yeseva One', cursive;
-    font-size: 300%;
+    font-size: 400%;
     letter-spacing: 4px; }
+    @media (min-width: 1020px) {
+      .hero-text-hold h1 {
+        font-size: 500%; } }
   .hero-text-hold img {
     width: 75%;
     max-width: 295px;

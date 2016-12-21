@@ -16,6 +16,7 @@
   display: flex;
   flex-grow: 1;
   justify-content: center;
+
 }
 .hero-text-hold {
   margin-top: 5vh;
@@ -23,14 +24,22 @@
   width: auto;
   height: 50%;
   padding: 25px;
+  @media (min-width: 750px) {
+    width: 50vw;
+    height: auto;
+  }
   .hero-text {
     text-align: center;
   }
+
   h1 {
     color: white;
     font-family: 'Yeseva One', cursive;
-    font-size: 300%;
+    font-size: 400%;
     letter-spacing: 4px;
+    @media (min-width: 1020px) {
+      font-size: 500%;
+    }
   }
   img {
     width: 75%;
