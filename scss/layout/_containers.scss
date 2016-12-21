@@ -222,13 +222,18 @@
       background-position: center;
       background-size: cover;
       border-radius: 50%;
+      @media (max-width: 540px) {
+        height: 160px;
+        width: 160px;
+        display: block;
+        margin: auto;
+      }
     }
     .grower-details {
       flex-grow: 1;
       margin-top: 15px;
       text-align: center;
       font-family: 'Merriweather Sans', sans-serif;
-
       height: 250px;
       flex-basis: 50%;
       color: white;
@@ -239,6 +244,12 @@
       }
       p {
         font-size: 16px;
+        @media (max-width: 580px) {
+          font-size: 14px;
+        }
+        @media (max-width: 540px) {
+          font-size: 12px;
+        }
       }
     }
   }

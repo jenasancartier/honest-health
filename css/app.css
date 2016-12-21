@@ -198,6 +198,12 @@ body {
       background-position: center;
       background-size: cover;
       border-radius: 50%; }
+      @media (max-width: 540px) {
+        .about-container .about-section .grower-pic {
+          height: 160px;
+          width: 160px;
+          display: block;
+          margin: auto; } }
     .about-container .about-section .grower-details {
       flex-grow: 1;
       margin-top: 15px;
@@ -212,6 +218,12 @@ body {
         font-weight: bolder; }
       .about-container .about-section .grower-details p {
         font-size: 16px; }
+        @media (max-width: 580px) {
+          .about-container .about-section .grower-details p {
+            font-size: 14px; } }
+        @media (max-width: 540px) {
+          .about-container .about-section .grower-details p {
+            font-size: 12px; } }
 
 footer {
   text-align: center;
