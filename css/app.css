@@ -11,29 +11,49 @@
 body {
   -webkit-font-smoothing: antialiased; }
 
-.icon-container {
-  display: flex;
-  flex-wrap: wrap; }
-  .icon-container .icon-column {
-    border: 1px solid #4CBF8B;
-    height: 25%;
-    flex-grow: 1;
-    flex-basis: 33.33%;
-    justify-content: center;
-    text-align: center; }
-    @media (max-width: 900px) {
-      .icon-container .icon-column {
-        flex-wrap: wrap;
-        flex-basis: 100%; } }
-    .icon-container .icon-column p {
-      font-family: 'Merriweather', serif;
-      color: #003226;
-      font-size: 1.3em; }
-    .icon-container .icon-column img {
-      width: 125px;
-      height: auto;
-      margin-top: 8%;
-      padding: 10px; }
+.icon-section {
+  width: 85vw;
+  display: block;
+  margin: auto; }
+  .icon-section .icon-container {
+    display: flex;
+    flex-wrap: wrap; }
+    .icon-section .icon-container .icon-column {
+      height: 25%;
+      flex-grow: 1;
+      flex-basis: 33.33%;
+      justify-content: center;
+      text-align: center;
+      padding: 20px; }
+      @media (max-width: 560px) {
+        .icon-section .icon-container .icon-column {
+          flex-wrap: wrap;
+          flex-basis: 100%; } }
+      .icon-section .icon-container .icon-column p {
+        font-family: 'Merriweather', serif;
+        color: #003226;
+        font-size: 1.3em; }
+      .icon-section .icon-container .icon-column img {
+        width: 125px;
+        height: auto;
+        margin-top: 8%;
+        padding: 10px; }
+
+.mission-container {
+  background: #003226; }
+  .mission-container .mission-section {
+    display: block;
+    margin: auto;
+    width: 85vw;
+    padding: 35px;
+    color: white; }
+    .mission-container .mission-section h5 {
+      text-align: center; }
+    .mission-container .mission-section .mission-columns {
+      display: flex;
+      justify-content: center; }
+    .mission-container .mission-section .mission-box {
+      width: 40%; }
 
 .hero-container {
   height: 100vh;
