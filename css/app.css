@@ -15,8 +15,8 @@ body {
   display: flex;
   flex-wrap: wrap; }
   .icon-container .icon-column {
-    border: 1px solid black;
-    height: 300px;
+    border: 1px solid #4CBF8B;
+    height: 25%;
     flex-grow: 1;
     flex-basis: 33.33%;
     justify-content: center;
@@ -25,6 +25,15 @@ body {
       .icon-container .icon-column {
         flex-wrap: wrap;
         flex-basis: 100%; } }
+    .icon-container .icon-column p {
+      font-family: 'Merriweather', serif;
+      color: #003226;
+      font-size: 1.3em; }
+    .icon-container .icon-column img {
+      width: 125px;
+      height: auto;
+      margin-top: 8%;
+      padding: 10px; }
 
 .hero-container {
   height: 100vh;

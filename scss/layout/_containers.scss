@@ -2,8 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   .icon-column {
-    border: 1px solid black;
-    height: 300px;
+    border: 1px solid $moderngreen;
+    height: 25%;
     flex-grow:1;
     flex-basis: 33.33%;
     justify-content: center;
@@ -11,6 +11,17 @@
     @media (max-width: 900px) {
       flex-wrap: wrap;
       flex-basis: 100%;
+    }
+    p {
+      font-family: 'Merriweather', serif;
+      color: $blackgreen;
+      font-size: 1.3em;
+    }
+    img {
+      width: 125px;
+      height: auto;
+      margin-top: 8%;
+      padding: 10px;
     }
   }
 }
