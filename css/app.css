@@ -42,7 +42,7 @@ body {
 .mission-container .mission-section {
   display: block;
   margin: auto;
-  width: 85vw;
+  width: 95vw;
   padding: 35px; }
   .mission-container .mission-section h5 {
     color: #4CBF8B;
@@ -60,6 +60,7 @@ body {
     justify-content: space-around; }
   .mission-container .mission-section .mission-box {
     width: 40%;
+    height: 250px;
     background: #4CBF8B;
     color: white;
     text-align: center;
