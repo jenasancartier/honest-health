@@ -35,7 +35,7 @@
 
 
 .mission-container {
-  background: $blackgreen;
+
   .mission-section {
     display: block;
     margin: auto;
@@ -43,11 +43,14 @@
     padding: 35px;
     // color: white;
     h5 {
-      color: white;
+      color: $moderngreen;
       text-align: center;
       margin-bottom: 1.4em;
       font-family: 'Merriweather', serif;
-
+    }
+    h6 {
+      font-size: 24px;
+      font-family: 'Merriweather Sans', sans-serif;
     }
     .mission-columns {
       display: flex;
@@ -59,7 +62,9 @@
     }
     .mission-box {
       width: 40%;
-      background: white;
+      background: $moderngreen;
+      color: white;
+      text-align: center;
       border-radius: 3px;
       padding: 25px;
       @media (max-width: 760px) {
