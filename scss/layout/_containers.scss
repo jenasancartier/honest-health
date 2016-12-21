@@ -196,7 +196,6 @@
   background: linear-gradient(135deg, $darkblue, $moderngreen);
   opacity: 0.9;
   position: relative;
-  // background: rgba(66, 69, 100, 0.3);
   &::after {
     @extend %after;
     background-image: url("../img/wood-bg.jpg");

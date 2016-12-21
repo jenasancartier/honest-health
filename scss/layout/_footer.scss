@@ -1,0 +1,12 @@
+footer {
+  text-align: center;
+  font-size: 11px;
+  font-family: 'Merriweather Sans', sans-serif;
+  background: linear-gradient(135deg, $darkblue, $seablue);
+  height: 65px;
+  color: white;
+  p {
+    padding-top: 25px;
+    margin: 0;
+  }
+}
