@@ -2,6 +2,9 @@
   height: 100vh;
   position: relative;
   background: rgba(66, 69, 100, 0.3);
+  @media (max-width: 800px) {
+    height: 65vh;
+  }
   &::after {
     @extend %after;
     background-image: url("../img/background-pic.png");
@@ -24,8 +27,9 @@
   width: auto;
   height: 50%;
   padding: 25px;
-  @media (min-width: 750px) {
+  @media (min-width: 770px) {
     width: 50vw;
+    margin-top: 2vh;
     height: auto;
   }
   .hero-text {
