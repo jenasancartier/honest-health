@@ -95,9 +95,9 @@ body {
       font-size: 16px;
       font-family: 'Merriweather Sans', sans-serif;
       color: white;
-      -ms-transition: -ms-transform 0.75s;
-      -webkit-transition: -webkit-transform 0.75s;
-      transition: transform 0.75s; }
+      -ms-transition: -ms-transform 0.5s;
+      -webkit-transition: -webkit-transform 0.5s;
+      transition: transform 0.5s; }
       .strain-gallery .strain .strain-info:hover {
         -ms-transform: translateY(-250px);
         -webkit-transform: translateY(-250px);
@@ -229,10 +229,7 @@ footer {
   text-align: center;
   font-size: 11px;
   font-family: 'Merriweather Sans', sans-serif;
-  background: -webkit-linear-gradient(90deg, #155A97, #1D97BC, #23B8BB);
-  background: -o-linear-gradient(90deg, #155A97, #1D97BC, #23B8BB);
-  background: -moz-linear-gradient(90deg, #155A97, #1D97BC, #23B8BB);
-  background: linear-gradient(90deg, #155A97, #1D97BC, #23B8BB);
+  background-color: #262626;
   height: 65px;
   color: white; }
   footer p {
