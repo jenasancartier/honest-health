@@ -67,8 +67,6 @@
       width: 40%;
       height: 40%;
       border: 1px solid $moderngreen;
-      // background: linear-gradient(220deg, $teal, $moderngreen, $teal);
-      // background: -webkit-linear-gradient(220deg, rgba(29,151,188,.7), rgba(76,191,139,.7) 0%, rgba(35,184,187,.7) 60%);
       color: $teal;
       text-align: center;
       border-radius: 2px;
@@ -93,11 +91,11 @@
           left: 0;
         }
       }
-      }
       @media (max-width: 760px) {
         flex-wrap: wrap;
         flex-basis: 100%;
         margin-top: 20px;
+      }
       }
     }
   }

@@ -87,11 +87,11 @@ body {
       .mission-container .mission-section .mission-box:hover:after {
         width: 0%;
         left: 0; }
-  @media (max-width: 760px) {
-    .mission-container .mission-section {
-      flex-wrap: wrap;
-      flex-basis: 100%;
-      margin-top: 20px; } }
+    @media (max-width: 760px) {
+      .mission-container .mission-section .mission-box {
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        margin-top: 20px; } }
 
 .strain-gallery {
   display: flex;
@@ -294,7 +294,8 @@ footer {
         height: 3px;
         background: #f7f7f7; }
       .hero-container ul li:hover {
-        cursor: pointer; }
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.1); }
         .hero-container ul li:hover:after {
           width: 100%;
           left: 0; }
