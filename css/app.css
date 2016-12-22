@@ -69,12 +69,29 @@ body {
     color: #23B8BB;
     text-align: center;
     border-radius: 2px;
-    padding: 25px; }
-    @media (max-width: 760px) {
-      .mission-container .mission-section .mission-box {
-        flex-wrap: wrap;
-        flex-basis: 100%;
-        margin-top: 20px; } }
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+    transition: .3s; }
+    .mission-container .mission-section .mission-box:after {
+      position: absolute;
+      transition: .3s;
+      content: '';
+      width: 0;
+      left: 50%;
+      bottom: 0;
+      height: 3px;
+      background: #f7f7f7; }
+    .mission-container .mission-section .mission-box:hover {
+      border-radius: 30px; }
+      .mission-container .mission-section .mission-box:hover:after {
+        width: 0%;
+        left: 0; }
+  @media (max-width: 760px) {
+    .mission-container .mission-section {
+      flex-wrap: wrap;
+      flex-basis: 100%;
+      margin-top: 20px; } }
 
 .strain-gallery {
   display: flex;
