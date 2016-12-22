@@ -239,7 +239,10 @@ footer {
 .hero-container {
   height: 100vh;
   position: relative;
-  background: rgba(66, 69, 100, 0.3); }
+  background: -webkit-linear-gradient(top, rgba(76, 191, 139, 0.4) 0%, rgba(21, 90, 151, 0.4) 60%);
+  background: -moz-linear-gradient(top, rgba(76, 191, 139, 0.4) 0%, rgba(21, 90, 151, 0.4) 60%);
+  background: -o-linear-gradient(top, rgba(76, 191, 139, 0.4) 0%, rgba(21, 90, 151, 0.4) 60%);
+  background: linear-gradient(top, rgba(76, 191, 139, 0.4) 0%, rgba(21, 90, 151, 0.4) 60%); }
   @media (max-width: 800px) {
     .hero-container {
       height: 65vh; } }
@@ -259,7 +262,7 @@ footer {
       color: white;
       font-family: 'Merriweather Sans', sans-serif;
       margin: 15px;
-      font-size: 16px; }
+      font-size: 18px; }
   .hero-container img {
     padding: 35px; }
 
@@ -269,15 +272,15 @@ footer {
   justify-content: center; }
 
 .hero-text-hold {
-  margin-top: 4vh;
+  margin-top: 2vh;
   border: 1px solid white;
   width: auto;
   height: 50%;
   padding: 25px; }
-  @media (min-width: 770px) {
+  @media (min-width: 800px) {
     .hero-text-hold {
       width: 50vw;
-      margin-top: 2vh;
+      margin-top: 7vh;
       height: auto; } }
   .hero-text-hold .hero-text {
     text-align: center; }
@@ -285,10 +288,13 @@ footer {
     color: white;
     font-family: 'Yeseva One', cursive;
     font-size: 400%;
-    letter-spacing: 4px; }
+    letter-spacing: 4px;
+    margin-top: 0; }
     @media (min-width: 1020px) {
       .hero-text-hold h1 {
-        font-size: 500%; } }
+        font-size: 700%; }
+        .hero-text-hold h1:nth-of-type(1) {
+          margin-top: 20px; } }
   .hero-text-hold img {
     width: 75%;
     max-width: 295px;
