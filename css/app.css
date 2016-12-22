@@ -247,6 +247,19 @@ footer {
     background-image: url("../img/background-pic.png");
     background-position: center;
     background-size: cover; }
+  .hero-container ul {
+    display: flex;
+    position: absolute;
+    top: 40px;
+    right: 50px; }
+    @media (max-width: 760px) {
+      .hero-container ul {
+        display: none; } }
+    .hero-container ul li {
+      color: white;
+      font-family: 'Merriweather Sans', sans-serif;
+      margin: 15px;
+      font-size: 16px; }
   .hero-container img {
     padding: 35px; }
 

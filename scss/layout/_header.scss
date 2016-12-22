@@ -11,6 +11,21 @@
     background-position: center;
     background-size: cover;
   }
+  ul {
+    display: flex;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    @media (max-width: 760px) {
+      display: none;
+    }
+    li {
+      color: white;
+      font-family: 'Merriweather Sans', sans-serif;
+      margin: 15px;
+      font-size: 16px;
+    }
+  }
   img {
     padding: 35px;
   }
