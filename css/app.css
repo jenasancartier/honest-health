@@ -40,43 +40,41 @@ body {
         margin-top: 4%;
         padding: 10px; }
 
-.mission-container {
-  margin-bottom: 30px; }
-  .mission-container .mission-section {
-    display: block;
-    margin: auto;
-    width: 95vw;
-    padding: 35px; }
-    .mission-container .mission-section h5 {
-      color: #4CBF8B;
-      text-align: center;
-      margin-bottom: 1.4em;
-      font-family: 'Merriweather', serif; }
-    .mission-container .mission-section h6 {
-      font-size: 24px;
-      font-family: 'Merriweather Sans', sans-serif; }
-    .mission-container .mission-section p {
-      font-family: 'Merriweather Sans', sans-serif;
-      margin-top: 25px; }
-    .mission-container .mission-section .mission-columns {
-      display: flex;
-      flex-wrap: wrap;
-      flex-grow: 1;
-      justify-content: center;
-      justify-content: space-around; }
-    .mission-container .mission-section .mission-box {
-      width: 40%;
-      height: 40%;
-      background: linear-gradient(220deg, #23B8BB, #4CBF8B);
-      color: white;
-      text-align: center;
-      border-radius: 2px;
-      padding: 25px; }
-      @media (max-width: 760px) {
-        .mission-container .mission-section .mission-box {
-          flex-wrap: wrap;
-          flex-basis: 100%;
-          margin-top: 20px; } }
+.mission-container .mission-section {
+  display: block;
+  margin: auto;
+  width: 95vw;
+  padding: 35px; }
+  .mission-container .mission-section h5 {
+    color: #23B8BB;
+    text-align: center;
+    margin-bottom: 1.4em;
+    font-family: 'Merriweather', serif; }
+  .mission-container .mission-section h6 {
+    font-size: 24px;
+    font-family: 'Merriweather Sans', sans-serif; }
+  .mission-container .mission-section p {
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-top: 25px; }
+  .mission-container .mission-section .mission-columns {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    justify-content: space-around; }
+  .mission-container .mission-section .mission-box {
+    width: 40%;
+    height: 40%;
+    border: 1px solid #4CBF8B;
+    color: #23B8BB;
+    text-align: center;
+    border-radius: 2px;
+    padding: 25px; }
+    @media (max-width: 760px) {
+      .mission-container .mission-section .mission-box {
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        margin-top: 20px; } }
 
 .strain-gallery {
   display: flex;
@@ -262,7 +260,26 @@ footer {
       color: white;
       font-family: 'Merriweather Sans', sans-serif;
       margin: 15px;
-      font-size: 18px; }
+      padding: 5px;
+      font-size: 18px;
+      text-transform: uppercase;
+      position: relative;
+      overflow: hidden;
+      transition: .3s; }
+      .hero-container ul li:after {
+        position: absolute;
+        transition: .3s;
+        content: '';
+        width: 0;
+        left: 50%;
+        bottom: 0;
+        height: 3px;
+        background: #f7f7f7; }
+      .hero-container ul li:hover {
+        cursor: pointer; }
+        .hero-container ul li:hover:after {
+          width: 100%;
+          left: 0; }
   .hero-container img {
     padding: 35px; }
 
@@ -274,6 +291,7 @@ footer {
 .hero-text-hold {
   margin-top: 2vh;
   border: 1px solid white;
+  border-radius: 2px;
   width: auto;
   height: 50%;
   padding: 25px; }

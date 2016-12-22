@@ -35,14 +35,15 @@
 
 
 .mission-container {
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
+  // background: -webkit-linear-gradient(220deg, rgba(29,151,188,.7) 0%, rgba(76,191,139,.7) 60%, rgba(35,184,187,.5) 90%);
   .mission-section {
     display: block;
     margin: auto;
     width: 95vw;
     padding: 35px;
     h5 {
-      color: $moderngreen;
+      color: $teal;
       text-align: center;
       margin-bottom: 1.4em;
       font-family: 'Merriweather', serif;
@@ -65,8 +66,10 @@
     .mission-box {
       width: 40%;
       height: 40%;
-      background: linear-gradient(220deg, $teal, $moderngreen);
-      color: white;
+      border: 1px solid $moderngreen;
+      // background: linear-gradient(220deg, $teal, $moderngreen, $teal);
+      // background: -webkit-linear-gradient(220deg, rgba(29,151,188,.7), rgba(76,191,139,.7) 0%, rgba(35,184,187,.7) 60%);
+      color: $teal;
       text-align: center;
       border-radius: 2px;
       padding: 25px;

@@ -27,7 +27,29 @@
       color: white;
       font-family: 'Merriweather Sans', sans-serif;
       margin: 15px;
+      padding: 5px;
       font-size: 18px;
+      text-transform: uppercase;
+      position: relative;
+      overflow:hidden;
+      transition: .3s;
+      &:after {
+        position: absolute;
+        transition: .3s;
+        content: '';
+        width: 0;
+        left: 50%;
+        bottom: 0;
+        height: 3px;
+        background: #f7f7f7;
+      }
+      &:hover {
+        cursor: pointer;
+        &:after {
+          width: 100%;
+          left:0;
+        }
+      }
     }
   }
   img {
@@ -43,6 +65,7 @@
 .hero-text-hold {
   margin-top: 2vh;
   border: 1px solid white;
+  border-radius: 2px;
   width: auto;
   height: 50%;
   padding: 25px;
