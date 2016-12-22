@@ -268,9 +268,9 @@ footer {
   .hero-container ul {
     display: flex;
     position: absolute;
-    top: 40px;
+    top: 30px;
     right: 50px; }
-    @media (max-width: 760px) {
+    @media (max-width: 820px) {
       .hero-container ul {
         display: none; } }
     .hero-container ul li {
@@ -282,7 +282,8 @@ footer {
       text-transform: uppercase;
       position: relative;
       overflow: hidden;
-      transition: .3s; }
+      transition: .3s;
+      letter-spacing: 1.5px; }
       .hero-container ul li:after {
         position: absolute;
         transition: .3s;

@@ -18,9 +18,9 @@
   ul {
     display: flex;
     position: absolute;
-    top: 40px;
+    top: 30px;
     right: 50px;
-    @media (max-width: 760px) {
+    @media (max-width: 820px) {
       display: none;
     }
     li {
@@ -33,6 +33,7 @@
       position: relative;
       overflow:hidden;
       transition: .3s;
+      letter-spacing: 1.5px;
       &:after {
         position: absolute;
         transition: .3s;
