@@ -265,15 +265,121 @@ footer {
     background-image: url("../img/background-pic.png");
     background-position: center;
     background-size: cover; }
-  .hero-container ul {
+  .hero-container .button_container {
+    position: fixed;
+    top: 5%;
+    right: 2%;
+    height: 27px;
+    width: 35px;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity .25s ease; }
+  .hero-container .button_container:hover {
+    opacity: .7; }
+  .hero-container .button_container.active .top {
+    transform: translateY(11px) translateX(0) rotate(45deg);
+    background: #FFF; }
+  .hero-container .button_container.active .middle {
+    opacity: 0;
+    background: #FFF; }
+  .hero-container .button_container.active .bottom {
+    transform: translateY(-11px) translateX(0) rotate(-45deg);
+    background: #FFF; }
+  .hero-container .button_container span {
+    background: #1abc9c;
+    border: none;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .35s ease;
+    cursor: pointer; }
+  .hero-container .button_container span:nth-of-type(2) {
+    top: 11px; }
+  .hero-container .button_container span:nth-of-type(3) {
+    top: 22px; }
+  .hero-container .overlay {
+    position: fixed;
+    background: #1abc9c;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden; }
+  .hero-container .overlay.open {
+    opacity: .9;
+    visibility: visible;
+    height: 100%; }
+  .hero-container .overlay.open li {
+    animation: fadeInRight .5s ease forwards;
+    animation-delay: .35s; }
+  .hero-container .overlay.open li:nth-of-type(2) {
+    animation-delay: .4s; }
+  .hero-container .overlay.open li:nth-of-type(3) {
+    animation-delay: .45s; }
+  .hero-container .overlay.open li:nth-of-type(4) {
+    animation-delay: .50s; }
+  .hero-container .overlay nav {
+    position: relative;
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 400;
+    text-align: center; }
+  .hero-container .overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%; }
+  .hero-container .overlay ul li {
+    display: block;
+    height: 25%;
+    height: calc(100% / 4);
+    min-height: 50px;
+    position: relative;
+    opacity: 0; }
+  .hero-container .overlay ul li a {
+    display: block;
+    position: relative;
+    color: #FFF;
+    text-decoration: none;
+    overflow: hidden; }
+  .hero-container .overlay ul li a:hover:after, .hero-container .overlay ul li a:focus:after, .hero-container .overlay ul li a:active:after {
+    width: 100%; }
+  .hero-container .overlay ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    transform: translateX(-50%);
+    height: 3px;
+    background: #FFF;
+    transition: .35s; }
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%; }
+  100% {
+    opacity: 1;
+    left: 0; } }
+  .hero-container ul.main-links {
     display: flex;
     position: absolute;
     top: 30px;
     right: 50px; }
-    @media (max-width: 820px) {
-      .hero-container ul {
+    @media (max-width: 600px) {
+      .hero-container ul.main-links {
         display: none; } }
-    .hero-container ul li {
+    .hero-container ul.main-links li {
       color: white;
       font-family: 'Merriweather Sans', sans-serif;
       margin: 15px;
@@ -284,7 +390,11 @@ footer {
       overflow: hidden;
       transition: .3s;
       letter-spacing: 1.5px; }
-      .hero-container ul li:after {
+      @media (max-width: 820px) {
+        .hero-container ul.main-links li {
+          font-size: 14px;
+          margin: 5px; } }
+      .hero-container ul.main-links li:after {
         position: absolute;
         transition: .3s;
         content: '';
@@ -293,10 +403,10 @@ footer {
         bottom: 0;
         height: 3px;
         background: #f7f7f7; }
-      .hero-container ul li:hover {
+      .hero-container ul.main-links li:hover {
         cursor: pointer;
         background: rgba(255, 255, 255, 0.1); }
-        .hero-container ul li:hover:after {
+        .hero-container ul.main-links li:hover:after {
           width: 100%;
           left: 0; }
   .hero-container img {
