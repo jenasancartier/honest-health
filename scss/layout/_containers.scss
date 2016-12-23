@@ -35,7 +35,8 @@
 
 
 .mission-container {
-  // margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
   // background: -webkit-linear-gradient(220deg, rgba(29,151,188,.7) 0%, rgba(76,191,139,.7) 60%, rgba(35,184,187,.5) 90%);
   .mission-section {
     display: block;
@@ -213,6 +214,8 @@
   background: linear-gradient(135deg, $darkblue, $moderngreen);
   opacity: 0.9;
   position: relative;
+  margin-top: 50px;
+  height: 400px;
   &::after {
     @extend %after;
     background-image: url("../img/wood-bg.jpg");

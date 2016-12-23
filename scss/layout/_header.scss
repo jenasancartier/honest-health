@@ -62,7 +62,7 @@
 
   .overlay {
     position: fixed;
-    background: #1abc9c;
+    background: $moderngreen;
     top: 0;
     left: 0;
     width: 100%;
@@ -90,9 +90,9 @@
   .overlay.open li:nth-of-type(4) {
     animation-delay: .50s;
   }
-  .overlay nav {
+  .overlay.overlay-menu {
     position: relative;
-    height: 70%;
+    height: 90%;
     top: 50%;
     transform: translateY(-50%);
     font-size: 50px;

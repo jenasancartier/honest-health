@@ -40,58 +40,61 @@ body {
         margin-top: 4%;
         padding: 10px; }
 
-.mission-container .mission-section {
-  display: block;
-  margin: auto;
-  width: 95vw;
-  padding: 35px; }
-  .mission-container .mission-section h5 {
-    color: #23B8BB;
-    text-align: center;
-    margin-bottom: 1.4em;
-    font-family: 'Merriweather', serif; }
-  .mission-container .mission-section h6 {
-    font-size: 24px;
-    font-family: 'Merriweather Sans', sans-serif; }
-  .mission-container .mission-section p {
-    font-family: 'Merriweather Sans', sans-serif;
-    margin-top: 25px; }
-  .mission-container .mission-section .mission-columns {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    justify-content: center;
-    justify-content: space-around; }
-  .mission-container .mission-section .mission-box {
-    width: 40%;
-    height: 40%;
-    border: 1px solid #4CBF8B;
-    color: #23B8BB;
-    text-align: center;
-    border-radius: 2px;
-    padding: 25px;
-    position: relative;
-    overflow: hidden;
-    transition: .3s; }
-    .mission-container .mission-section .mission-box:after {
-      position: absolute;
-      transition: .3s;
-      content: '';
-      width: 0;
-      left: 50%;
-      bottom: 0;
-      height: 3px;
-      background: #f7f7f7; }
-    .mission-container .mission-section .mission-box:hover {
-      border-radius: 30px; }
-      .mission-container .mission-section .mission-box:hover:after {
-        width: 0%;
-        left: 0; }
-    @media (max-width: 760px) {
-      .mission-container .mission-section .mission-box {
-        flex-wrap: wrap;
-        flex-basis: 100%;
-        margin-top: 20px; } }
+.mission-container {
+  margin-top: 20px;
+  margin-bottom: 40px; }
+  .mission-container .mission-section {
+    display: block;
+    margin: auto;
+    width: 95vw;
+    padding: 35px; }
+    .mission-container .mission-section h5 {
+      color: #23B8BB;
+      text-align: center;
+      margin-bottom: 1.4em;
+      font-family: 'Merriweather', serif; }
+    .mission-container .mission-section h6 {
+      font-size: 24px;
+      font-family: 'Merriweather Sans', sans-serif; }
+    .mission-container .mission-section p {
+      font-family: 'Merriweather Sans', sans-serif;
+      margin-top: 25px; }
+    .mission-container .mission-section .mission-columns {
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      justify-content: center;
+      justify-content: space-around; }
+    .mission-container .mission-section .mission-box {
+      width: 40%;
+      height: 40%;
+      border: 1px solid #4CBF8B;
+      color: #23B8BB;
+      text-align: center;
+      border-radius: 2px;
+      padding: 25px;
+      position: relative;
+      overflow: hidden;
+      transition: .3s; }
+      .mission-container .mission-section .mission-box:after {
+        position: absolute;
+        transition: .3s;
+        content: '';
+        width: 0;
+        left: 50%;
+        bottom: 0;
+        height: 3px;
+        background: #f7f7f7; }
+      .mission-container .mission-section .mission-box:hover {
+        border-radius: 30px; }
+        .mission-container .mission-section .mission-box:hover:after {
+          width: 0%;
+          left: 0; }
+      @media (max-width: 760px) {
+        .mission-container .mission-section .mission-box {
+          flex-wrap: wrap;
+          flex-basis: 100%;
+          margin-top: 20px; } }
 
 .strain-gallery {
   display: flex;
@@ -192,7 +195,9 @@ body {
   background: -moz-linear-gradient(135deg, #155A97, #4CBF8B);
   background: linear-gradient(135deg, #155A97, #4CBF8B);
   opacity: 0.9;
-  position: relative; }
+  position: relative;
+  margin-top: 50px;
+  height: 400px; }
   .about-container::after {
     background-image: url("../img/wood-bg.jpg");
     background-position: center;
@@ -301,7 +306,7 @@ footer {
     top: 22px; }
   .hero-container .overlay {
     position: fixed;
-    background: #1abc9c;
+    background: #4CBF8B;
     top: 0;
     left: 0;
     width: 100%;
@@ -323,9 +328,9 @@ footer {
     animation-delay: .45s; }
   .hero-container .overlay.open li:nth-of-type(4) {
     animation-delay: .50s; }
-  .hero-container .overlay nav {
+  .hero-container .overlay.overlay-menu {
     position: relative;
-    height: 70%;
+    height: 90%;
     top: 50%;
     transform: translateY(-50%);
     font-size: 50px;
