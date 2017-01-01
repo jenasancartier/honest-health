@@ -265,7 +265,7 @@ footer {
   background: linear-gradient(top, rgba(76, 191, 139, 0.4) 0%, rgba(21, 90, 151, 0.4) 60%); }
   @media (max-width: 800px) {
     .hero-container {
-      height: 65vh; } }
+      height: 75vh; } }
   .hero-container::after {
     background-image: url("../img/background-pic.png");
     background-position: center;
@@ -389,7 +389,7 @@ footer {
       font-family: 'Merriweather Sans', sans-serif;
       margin: 15px;
       padding: 5px;
-      font-size: 18px;
+      font-size: 16px;
       text-transform: uppercase;
       position: relative;
       overflow: hidden;
@@ -432,7 +432,7 @@ footer {
   @media (min-width: 800px) {
     .hero-text-hold {
       width: 50vw;
-      margin-top: 7vh;
+      margin-top: 3vh;
       height: auto; } }
   .hero-text-hold .hero-text {
     text-align: center; }

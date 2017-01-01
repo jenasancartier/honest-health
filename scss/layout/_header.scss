@@ -7,7 +7,7 @@
   background: -o-linear-gradient(top, rgba(76,191,139,.4) 0%, rgba(21,90,151,.4) 60%);
   background: linear-gradient(top, rgba(76,191,139,.4) 0%, rgba(21,90,151,.4) 60%);
   @media (max-width: 800px) {
-    height: 65vh;
+    height: 75vh;
   }
   &::after {
     @extend %after;
@@ -164,7 +164,7 @@
       font-family: 'Merriweather Sans', sans-serif;
       margin: 15px;
       padding: 5px;
-      font-size: 18px;
+      font-size: 16px;
       text-transform: uppercase;
       position: relative;
       overflow:hidden;
@@ -213,7 +213,7 @@
   padding: 25px;
   @media (min-width: 800px) {
     width: 50vw;
-    margin-top: 7vh;
+    margin-top: 3vh;
     height: auto;
   }
   .hero-text {
