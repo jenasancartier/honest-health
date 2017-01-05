@@ -184,6 +184,7 @@ transition: opacity .25s ease;
   visibility: hidden;
   transition: opacity .35s, visibility .35s, height .35s;
   overflow: hidden;
+  z-index: 99;
 }
 .overlay.open {
   opacity: .9;
