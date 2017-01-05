@@ -272,6 +272,9 @@ footer {
     background-size: cover; }
   .hero-container img {
     padding: 35px; }
+  @media (max-width: 650px) {
+    .hero-container img.leaf-icon {
+      display: none; } }
 
 .hero-text-parent {
   display: flex;
@@ -284,8 +287,9 @@ footer {
   border-radius: 2px;
   width: auto;
   height: 50%;
-  padding: 25px; }
-  @media (min-width: 800px) {
+  padding: 25px;
+  margin-top: 25%; }
+  @media (min-width: 650px) {
     .hero-text-hold {
       width: 45vw;
       height: 50%;
@@ -295,7 +299,8 @@ footer {
       top: 20%; } }
   @media (max-width: 350px) {
     .hero-text-hold {
-      width: 90vw; } }
+      width: 90vw;
+      margin-top: 38%; } }
   .hero-text-hold .hero-text {
     text-align: center; }
   .hero-text-hold h1 {

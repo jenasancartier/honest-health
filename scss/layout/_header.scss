@@ -19,6 +19,11 @@
   img {
     padding: 35px;
   }
+  img.leaf-icon {
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
 }
 
 .hero-text-parent {
@@ -33,7 +38,8 @@
   width: auto;
   height: 50%;
   padding: 25px;
-  @media (min-width: 800px) {
+  margin-top: 25%;
+  @media (min-width: 650px) {
     width: 45vw;
     height: 50%;
     margin-top: 8vh;
@@ -43,6 +49,7 @@
   }
   @media (max-width: 350px) {
     width: 90vw;
+    margin-top: 38%;
   }
 
   .hero-text {
