@@ -293,8 +293,8 @@ footer {
     .hero-text-hold {
       width: 45vw;
       height: 50%;
-      margin-top: 8vh; } }
-  @media (max-width: 500px) {
+      margin-top: 3vh; } }
+  @media (max-width: 800px) {
     .hero-text-hold {
       top: 20%; } }
   @media (max-width: 350px) {
