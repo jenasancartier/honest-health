@@ -1,4 +1,4 @@
-.about-container::after, .hero-container::after {
+.about-container::after, header::after {
   content: "";
   opacity: 0.8;
   top: 0;
@@ -257,7 +257,7 @@ footer {
     padding-top: 25px;
     margin: 0; }
 
-.hero-container {
+header {
   height: 100vh;
   position: relative;
   background: -webkit-linear-gradient(top, rgba(76, 191, 139, 0.4) 0%, rgba(21, 90, 151, 0.4) 60%);
@@ -265,17 +265,14 @@ footer {
   background: -o-linear-gradient(top, rgba(76, 191, 139, 0.4) 0%, rgba(21, 90, 151, 0.4) 60%);
   background: linear-gradient(top, rgba(76, 191, 139, 0.4) 0%, rgba(21, 90, 151, 0.4) 60%); }
   @media (max-width: 800px) {
-    .hero-container {
+    header {
       height: 75vh; } }
-  .hero-container::after {
+  header::after {
     background-image: url("../img/background-pic.png");
     background-position: center;
     background-size: cover; }
-  .hero-container img {
+  header img {
     padding: 35px; }
-  @media (max-width: 650px) {
-    .hero-container img.leaf-icon {
-      display: none; } }
 
 .hero-text-parent {
   display: flex;
@@ -286,22 +283,20 @@ footer {
   margin-top: 0;
   border: 2px solid white;
   border-radius: 2px;
-  width: auto;
   height: 50%;
   padding: 25px;
-  margin-top: 25%; }
-  @media (min-width: 650px) {
-    .hero-text-hold {
-      width: 45vw;
-      height: 50%;
-      margin-top: 2vh; } }
+  margin-top: 20vh;
+  width: 50vw; }
   @media (max-width: 800px) {
     .hero-text-hold {
-      top: 20%; } }
+      width: 60vw; } }
+  @media (max-width: 600px) {
+    .hero-text-hold {
+      width: 80vw; } }
   @media (max-width: 350px) {
     .hero-text-hold {
       width: 90vw;
-      margin-top: 38%; } }
+      margin-top: 20vh; } }
   .hero-text-hold .hero-text {
     text-align: center; }
   .hero-text-hold h1 {
@@ -352,12 +347,16 @@ ul.main-links {
   display: flex;
   position: absolute;
   top: 30px;
-  right: 50px; }
+  left: 50%;
+  transform: translate(-50%, 0);
+  justify-content: center;
+  align-items: center;
+  background: white; }
   @media (max-width: 600px) {
     ul.main-links {
       display: none; } }
   ul.main-links li {
-    color: white;
+    color: #4CBF8B;
     font-family: 'Merriweather Sans', sans-serif;
     margin: 15px;
     padding: 5px;
