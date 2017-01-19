@@ -26,6 +26,10 @@
   }
 }
 
+// .link-container {
+//   width: 65%;
+// }
+
 .hero-text-parent {
   display: flex;
   flex-grow: 1;
@@ -33,7 +37,7 @@
 }
 .hero-text-hold {
   margin-top: 0;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 2px;
   width: auto;
   height: 50%;

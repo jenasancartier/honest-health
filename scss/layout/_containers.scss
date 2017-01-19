@@ -216,7 +216,7 @@
   opacity: 0.9;
   position: relative;
   margin-top: 50px;
-  height: 400px;
+  height: auto;
   &::after {
     @extend %after;
     background-image: url("../img/wood-bg.jpg");
@@ -231,6 +231,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @media (max-width: 540px) {
+
+    }
     .grower-pic {
       height: 250px;
       width: 250px;
@@ -240,15 +243,15 @@
       background-size: cover;
       border-radius: 50%;
       @media (max-width: 540px) {
-        height: 160px;
-        width: 160px;
-        display: block;
-        margin: auto;
+        height: 220px;
+        width: 220px;
+        margin-top: -40px;
       }
     }
     .grower-details {
       flex-grow: 1;
       margin-top: 15px;
+      margin-bottom: 15px;
       text-align: center;
       font-family: 'Merriweather Sans', sans-serif;
       height: 250px;
@@ -265,7 +268,7 @@
           font-size: 14px;
         }
         @media (max-width: 540px) {
-          font-size: 12px;
+          font-size: 13px;
         }
       }
     }
