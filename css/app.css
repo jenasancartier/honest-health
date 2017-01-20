@@ -338,6 +338,12 @@ header {
   header img {
     padding: 35px; }
 
+.new-text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase; }
+
 .hero-text-parent {
   display: flex;
   flex-grow: 1;
@@ -363,20 +369,6 @@ header {
       margin-top: 5vh; } }
   .hero-text-hold .hero-text {
     text-align: center; }
-  .hero-text-hold h1 {
-    color: white;
-    font-family: 'Yeseva One', cursive;
-    font-size: 400%;
-    letter-spacing: 4px;
-    margin-top: 0; }
-    @media (min-width: 1020px) {
-      .hero-text-hold h1 {
-        font-size: 570%; }
-        .hero-text-hold h1:nth-of-type(1) {
-          margin-top: 20px; } }
-    @media (max-width: 350px) {
-      .hero-text-hold h1 {
-        font-size: 300%; } }
   .hero-text-hold img {
     width: 75%;
     max-width: 295px;
