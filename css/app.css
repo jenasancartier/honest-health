@@ -246,8 +246,19 @@ body {
           .about-container .about-section .grower-details p {
             font-size: 13px; } }
 
+.logo a {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; }
+  .logo a img {
+    height: 50px;
+    width: auto; }
+  .logo a h4 {
+    font-family: 'Yeseva One', cursive;
+    color: black; }
+
 .link-container {
-  height: 150px; }
+  height: 100px; }
 
 footer {
   text-align: center;
@@ -356,12 +367,12 @@ ul.main-links {
   transform: translate(-50%, 0);
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.8); }
+  background: #4CBF8B; }
   @media (max-width: 600px) {
     ul.main-links {
       display: none; } }
   ul.main-links li {
-    color: #4CBF8B;
+    color: white;
     font-family: 'Merriweather Sans', sans-serif;
     margin: 15px;
     padding: 5px;
@@ -383,10 +394,10 @@ ul.main-links {
       left: 50%;
       bottom: 0;
       height: 3px;
-      background: #4CBF8B; }
+      background: white; }
     ul.main-links li:hover {
       cursor: pointer;
-      background: rgba(76, 191, 139, 0.1); }
+      background: rgba(255, 255, 255, 0.1); }
       ul.main-links li:hover:after {
         width: 100%;
         left: 0; }

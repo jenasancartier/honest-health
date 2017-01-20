@@ -279,6 +279,20 @@
 
 
 //strains.html
+.logo a {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  img {
+    height: 50px;
+    width: auto;
+  }
+  h4 {
+    font-family: 'Yeseva One', cursive;
+    color: black;
+  }
+}
+
 .link-container {
-  height: 150px;
+  height: 100px;
 }
