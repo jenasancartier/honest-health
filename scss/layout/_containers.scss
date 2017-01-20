@@ -45,13 +45,15 @@
     width: 95vw;
     padding: 35px;
     h5 {
-      color: $teal;
+      // color: $teal;
       text-align: center;
       margin-bottom: 1.4em;
-      font-family: 'Merriweather', serif;
+      font-family: 'Yeseva One', cursive;
+      font-size: 2em;
     }
     h6 {
       font-size: 24px;
+      color: $moderngreen;
       font-family: 'Merriweather Sans', sans-serif;
     }
     p {
@@ -69,7 +71,6 @@
       width: 40%;
       height: 40%;
       border: 1px solid $moderngreen;
-      color: $teal;
       text-align: center;
       border-radius: 2px;
       padding: 25px;

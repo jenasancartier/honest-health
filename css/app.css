@@ -49,12 +49,13 @@ body {
     width: 95vw;
     padding: 35px; }
     .mission-container .mission-section h5 {
-      color: #23B8BB;
       text-align: center;
       margin-bottom: 1.4em;
-      font-family: 'Merriweather', serif; }
+      font-family: 'Yeseva One', cursive;
+      font-size: 2em; }
     .mission-container .mission-section h6 {
       font-size: 24px;
+      color: #4CBF8B;
       font-family: 'Merriweather Sans', sans-serif; }
     .mission-container .mission-section p {
       font-family: 'Merriweather Sans', sans-serif;
@@ -69,7 +70,6 @@ body {
       width: 40%;
       height: 40%;
       border: 1px solid #4CBF8B;
-      color: #23B8BB;
       text-align: center;
       border-radius: 2px;
       padding: 25px;
@@ -276,9 +276,6 @@ header {
     background-size: cover; }
   header img {
     padding: 35px; }
-
-.link-container {
-  height: 150px; }
 
 .hero-text-parent {
   display: flex;
