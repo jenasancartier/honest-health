@@ -20,7 +20,7 @@
       }
       p {
         font-family: 'Merriweather Sans', sans-serif;
-        color: $moderngreen;
+        color: lighten(black, 25%);
         font-weight: bolder;
         font-size: 1.3em;
       }
@@ -45,7 +45,7 @@
     width: 95vw;
     padding: 35px;
     h5 {
-      // color: $teal;
+      color: lighten(black, 15%);
       text-align: center;
       margin-bottom: 1.4em;
       font-family: 'Yeseva One', cursive;

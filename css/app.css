@@ -31,7 +31,7 @@ body {
           flex-basis: 100%; } }
       .icon-section .icon-container .icon-column p {
         font-family: 'Merriweather Sans', sans-serif;
-        color: #4CBF8B;
+        color: #404040;
         font-weight: bolder;
         font-size: 1.3em; }
       .icon-section .icon-container .icon-column img {
@@ -49,6 +49,7 @@ body {
     width: 95vw;
     padding: 35px; }
     .mission-container .mission-section h5 {
+      color: #262626;
       text-align: center;
       margin-bottom: 1.4em;
       font-family: 'Yeseva One', cursive;
@@ -367,7 +368,7 @@ ul.main-links {
   transform: translate(-50%, 0);
   justify-content: center;
   align-items: center;
-  background: #4CBF8B; }
+  background: rgba(76, 191, 139, 0.7); }
   @media (max-width: 600px) {
     ul.main-links {
       display: none; } }
