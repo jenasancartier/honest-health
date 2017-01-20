@@ -4,4 +4,6 @@ $(document).ready(function() {
    $('#overlay').toggleClass('open');
   });
 
+  $('.parallax').parallax();
+
 });
