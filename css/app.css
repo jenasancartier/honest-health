@@ -345,8 +345,6 @@ header {
 
 .hero-text-hold {
   margin-top: 0;
-  border: 2px solid white;
-  border-radius: 2px;
   height: 50%;
   padding: 25px;
   margin-top: 12vh;
@@ -417,7 +415,8 @@ ul.main-links {
   transform: translate(-50%, 0);
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.8); }
+  background: rgba(255, 255, 255, 0.9);
+  margin-top: 0; }
   @media (max-width: 600px) {
     ul.main-links {
       display: none; } }

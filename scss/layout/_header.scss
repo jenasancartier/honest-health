@@ -36,8 +36,8 @@ header {
 }
 .hero-text-hold {
   margin-top: 0;
-  border: 2px solid white;
-  border-radius: 2px;
+  // border: 2px solid white;
+  // border-radius: 2px;
   // width: auto;
   height: 50%;
   padding: 25px;
@@ -119,7 +119,8 @@ ul.main-links {
   transform: translate(-50%, 0);
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, .8);
+  background: rgba(255, 255, 255, .9);
+  margin-top: 0;
   @media (max-width: 600px) {
     display: none;
   }
