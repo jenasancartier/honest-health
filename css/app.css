@@ -1,20 +1,14 @@
-.about-container::after {
-  content: "";
-  opacity: 0.8;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; }
-
 body {
   -webkit-font-smoothing: antialiased; }
 
 .icon-section {
   width: 85vw;
+  z-index: 99;
   display: block;
   margin: auto; }
+  @media (max-width: 800px) {
+    .icon-section {
+      margin-top: 30px; } }
   .icon-section .icon-container {
     display: flex;
     flex-wrap: wrap; }
@@ -100,12 +94,18 @@ body {
 .strain-gallery {
   display: flex;
   flex-wrap: wrap; }
+  @media (max-width: 800px) {
+    .strain-gallery {
+      margin-top: 20px; } }
+  @media (max-width: 600px) {
+    .strain-gallery {
+      margin-top: 0; } }
   .strain-gallery .strain {
     flex-grow: 1;
     height: 250px;
     position: relative;
     overflow: hidden;
-    border: 2px solid white; }
+    border: 3px solid white; }
     .strain-gallery .strain .strain-info {
       position: absolute;
       top: 0px;
@@ -191,48 +191,46 @@ body {
       .strain-gallery .strain:nth-of-type(6) {
         flex-basis: 100%; } }
 
+div.parallax-container.footer {
+  height: 450px !important; }
+  @media (max-width: 1065px) {
+    div.parallax-container.footer {
+      height: 500px !important; } }
+  @media (max-width: 850px) {
+    div.parallax-container.footer {
+      height: 550px !important; } }
+
 .about-container {
-  background: -webkit-linear-gradient(135deg, #155A97, #4CBF8B);
-  background: -o-linear-gradient(135deg, #155A97, #4CBF8B);
-  background: -moz-linear-gradient(135deg, #155A97, #4CBF8B);
-  background: linear-gradient(135deg, #155A97, #4CBF8B);
-  opacity: 0.9;
+  background: -webkit-linear-gradient(top, rgba(76, 191, 139, 0.5) 0%, rgba(21, 90, 151, 0.5) 60%);
+  background: -moz-linear-gradient(top, rgba(76, 191, 139, 0.5) 0%, rgba(21, 90, 151, 0.5) 60%);
+  background: -o-linear-gradient(top, rgba(76, 191, 139, 0.5) 0%, rgba(21, 90, 151, 0.5) 60%);
+  background: linear-gradient(top, rgba(76, 191, 139, 0.5) 0%, rgba(21, 90, 151, 0.5) 60%);
   position: relative;
   margin-top: 50px;
   height: auto; }
-  .about-container::after {
-    background-image: url("../img/wood-bg.jpg");
-    background-position: center;
-    background-size: cover; }
   .about-container .about-section {
     padding: 45px;
     width: 85vw;
-    display: block;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
+    margin: auto; }
     .about-container .about-section .grower-pic {
-      height: 250px;
-      width: 250px;
-      margin-left: 40px;
+      height: 220px;
+      width: 220px;
+      display: block;
+      margin: auto;
+      margin-top: 30px;
       background-image: url("../img/nolan.jpg");
       background-position: center;
       background-size: cover;
       border-radius: 50%; }
-      @media (max-width: 540px) {
+      @media (max-width: 788px) {
         .about-container .about-section .grower-pic {
           height: 220px;
-          width: 220px;
-          margin-top: -40px; } }
+          width: 220px; } }
     .about-container .about-section .grower-details {
-      flex-grow: 1;
       margin-top: 15px;
       margin-bottom: 15px;
       text-align: center;
       font-family: 'Merriweather Sans', sans-serif;
-      height: 250px;
-      flex-basis: 50%;
       color: white; }
       .about-container .about-section .grower-details h5 {
         font-family: 'Merriweather', serif;
@@ -331,7 +329,7 @@ footer {
     height: 482px; } }
 
 header {
-  height: 88vh;
+  height: 84vh;
   position: relative;
   background: -webkit-linear-gradient(top, rgba(76, 191, 139, 0.4) 0%, rgba(21, 90, 151, 0.4) 60%);
   background: -moz-linear-gradient(top, rgba(76, 191, 139, 0.4) 0%, rgba(21, 90, 151, 0.4) 60%);

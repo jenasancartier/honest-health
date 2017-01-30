@@ -1,8 +1,12 @@
 
 .icon-section {
   width: 85vw;
+  z-index: 99;
   display: block;
   margin: auto;
+  @media (max-width: 800px) {
+    margin-top: 30px;
+  }
   .icon-container {
     display: flex;
     flex-wrap: wrap;
@@ -107,12 +111,19 @@
 .strain-gallery {
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 800px) {
+    margin-top: 20px;
+  }
+  @media (max-width: 600px) {
+    margin-top: 0;
+  }
   .strain {
     flex-grow: 1;
     height: 250px;
     position: relative;
     overflow: hidden;
-    border: 2px solid white;
+    border: 3px solid white;
+
     .strain-info {
       position: absolute;
       top: 0px;
@@ -210,54 +221,60 @@
   }
 }
 
+div.parallax-container.footer  {
+  height: 450px !important;
+  @media (max-width: 1065px) {
+    height: 500px !important;
+  }
+  @media (max-width: 850px) {
+    height: 550px !important;
+  }
+}
+
 .about-container {
-  background: -webkit-linear-gradient(135deg, $darkblue, $moderngreen);
-  background: -o-linear-gradient(135deg, $darkblue, $moderngreen);
-  background: -moz-linear-gradient(135deg, $darkblue, $moderngreen);
-  background: linear-gradient(135deg, $darkblue, $moderngreen);
-  opacity: 0.9;
+  background: -webkit-linear-gradient(top, rgba(76,191,139,.5) 0%, rgba(21,90,151,.5) 60%);
+  background: -moz-linear-gradient(top, rgba(76,191,139,.5) 0%, rgba(21,90,151,.5) 60%);
+  background: -o-linear-gradient(top, rgba(76,191,139,.5) 0%, rgba(21,90,151,.5) 60%);
+  background: linear-gradient(top, rgba(76,191,139,.5) 0%, rgba(21,90,151,.5) 60%);
   position: relative;
   margin-top: 50px;
   height: auto;
-  &::after {
-    @extend %after;
-    background-image: url("../img/wood-bg.jpg");
-    background-position: center;
-    background-size: cover;
-  }
+
+  // &::after {
+  //   @extend %after;
+  //   background-image: url("../img/wood-bg.jpg");
+  //   background-position: center;
+  //   background-size: cover;
+  // }
   .about-section {
     padding: 45px;
     width: 85vw;
-    display: block;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    @media (max-width: 540px) {
-
-    }
     .grower-pic {
-      height: 250px;
-      width: 250px;
-      margin-left: 40px;
+      height: 220px;
+      width: 220px;
+      display: block;
+      margin: auto;
+      margin-top: 30px;
       background-image: url("../img/nolan.jpg");
       background-position: center;
       background-size: cover;
       border-radius: 50%;
-      @media (max-width: 540px) {
+      @media (max-width: 788px) {
         height: 220px;
         width: 220px;
-        margin-top: -40px;
+        // margin-top: -40px;
       }
+      // @media (max-width: 718px) {
+      //   margin-left: 0;
+      // }
     }
     .grower-details {
-      flex-grow: 1;
       margin-top: 15px;
       margin-bottom: 15px;
       text-align: center;
       font-family: 'Merriweather Sans', sans-serif;
-      height: 250px;
-      flex-basis: 50%;
+      // height: 250px;
       color: white;
       h5 {
         font-family: 'Merriweather', serif;
