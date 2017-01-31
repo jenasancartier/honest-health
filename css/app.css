@@ -377,7 +377,7 @@ ul.main-links2 {
       .strain-section .row:nth-of-type(odd):after {
         content: '';
         width: 100vw;
-        background-color: #e2f5ec;
+        background-color: #f0f0f0;
         position: absolute;
         right: 0px;
         height: 63%;
@@ -386,6 +386,14 @@ ul.main-links2 {
         float: right;
         text-align: right;
         margin: 20px; }
+    .strain-section .row .strain-text h5, .strain-section .row .strain-text p {
+      font-family: 'Raleway', sans-serif; }
+    .strain-section .row .strain-text h5 {
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      color: gray; }
   .strain-section .strain-column {
     display: flex;
     flex-direction: row;

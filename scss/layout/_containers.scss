@@ -449,8 +449,8 @@ ul.main-links2 {
       &:after {
         content: '';
         width: 100vw;
-        background-color: lighten($moderngreen, 40%);
-        // background-color: lighten(gray, 40%);
+        // background-color: rgba(0,50,38,0.3);
+        background-color: lighten(gray, 44%);
         position: absolute;
         right: 0px;
         height: 63%;
@@ -460,6 +460,18 @@ ul.main-links2 {
         float: right;
         text-align: right;
         margin: 20px;
+      }
+    }
+    .strain-text {
+      h5, p {
+        font-family: 'Raleway', sans-serif;
+      }
+      h5 {
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+        color: lighten(black, 50%);
       }
     }
   }
