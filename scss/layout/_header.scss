@@ -21,9 +21,6 @@
   @media (max-width: 400px) {
     height: 50vh;
   }
-  // .parallax img {
-  //   width: 100vw !important;
-  // }
 }
 
 header {
@@ -41,20 +38,11 @@ header {
     height: 50vh;
   }
 
-  // &::after {
-  //   @extend %after;
-  //   background-image: url("../img/background-pic.png");
-  //   background-position: center;
-  //   background-size: cover;
-  // }
   img {
     padding: 35px;
   }
 }
 
-//test start
-
-//test end
 
 .new-text {
   font-family: 'Raleway', sans-serif;
@@ -66,14 +54,14 @@ header {
   transition: 0.5s;
   transition-timing-function: ease-out;
   -webkit-animation-name: rise;
-  -webkit-animation-duration: 5s;
-  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 0.5s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: cubic-bezier(0, 0.25, 0.55, 1);
   -webkit-animation-fill-mode: forwards;
   animation-name: rise;
   animation-duration: 3s;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0, 0.25, 0.55, 1);
   animation-fill-mode: forwards;
