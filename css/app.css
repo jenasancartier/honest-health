@@ -289,7 +289,7 @@ div.parallax-container.footer {
   width: 50%;
   left: 50%;
   transform: translate(-50%, 0);
-  margin-top: 7px;
+  margin-top: 10px;
   position: absolute; }
   .logo a img {
     height: 40px;
@@ -336,7 +336,7 @@ ul.main-links2 {
   background: #4CBF8B; }
   @media (max-width: 800px) {
     ul.main-links2 {
-      bottom: -79px; } }
+      bottom: -15px; } }
   @media (max-width: 600px) {
     ul.main-links2 {
       display: none; } }
