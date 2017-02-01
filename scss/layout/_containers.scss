@@ -162,7 +162,7 @@
         -ms-transform: translateY(-250px);
         -webkit-transform: translateY(-250px);
         transform: translateY(-250px);
-        cursor: pointer;
+        cursor: crosshair;
       }
     }
     .details-container {
@@ -286,6 +286,14 @@ div.parallax-container.footer  {
         height: 220px;
         width: 220px;
       }
+      @media (max-width: 400px) {
+        height: 180px;
+        width: 180px;
+      }
+      @media (max-width: 350px) {
+        height: 140px;
+        width: 140px;
+      }
     }
     .grower-details {
       margin-top: 15px;
@@ -341,6 +349,11 @@ div.parallax-container.footer  {
   height: 100px;
 }
 
+
+// .parallax-container {
+//   height: 575px !important;
+// }
+
 ul.main-links2 {
   display: flex;
   position: absolute;
@@ -354,7 +367,7 @@ ul.main-links2 {
   // background: rgba(255, 255, 255, .8);
   background: $moderngreen;
   @media (max-width: 800px) {
-    bottom: -32px;
+    bottom: -79px;
   }
   @media (max-width: 600px) {
     display: none;
@@ -477,7 +490,7 @@ ul.main-links2 {
       }
     }
     .strain-text {
-      h5, p {
+      h5 {
         font-family: 'Raleway', sans-serif;
       }
       h5 {

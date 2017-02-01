@@ -139,7 +139,7 @@ body {
         -ms-transform: translateY(-250px);
         -webkit-transform: translateY(-250px);
         transform: translateY(-250px);
-        cursor: pointer; }
+        cursor: crosshair; }
     .strain-gallery .strain .details-container {
       background-color: rgba(76, 191, 139, 0.7);
       height: 250px;
@@ -243,6 +243,14 @@ div.parallax-container.footer {
         .about-container .about-section .grower-pic {
           height: 220px;
           width: 220px; } }
+      @media (max-width: 400px) {
+        .about-container .about-section .grower-pic {
+          height: 180px;
+          width: 180px; } }
+      @media (max-width: 350px) {
+        .about-container .about-section .grower-pic {
+          height: 140px;
+          width: 140px; } }
     .about-container .about-section .grower-details {
       margin-top: 15px;
       margin-bottom: 15px;
@@ -299,7 +307,7 @@ ul.main-links2 {
   background: #4CBF8B; }
   @media (max-width: 800px) {
     ul.main-links2 {
-      bottom: -32px; } }
+      bottom: -79px; } }
   @media (max-width: 600px) {
     ul.main-links2 {
       display: none; } }
@@ -396,7 +404,7 @@ ul.main-links2 {
         margin: 20px; }
     .strain-section .row:nth-of-type(even) .strain-image img {
       margin-right: -63px; }
-    .strain-section .row .strain-text h5, .strain-section .row .strain-text p {
+    .strain-section .row .strain-text h5 {
       font-family: 'Raleway', sans-serif; }
     .strain-section .row .strain-text h5 {
       text-transform: uppercase;
@@ -433,12 +441,17 @@ footer {
   height: 10vh;
   margin: 0; }
 
-@media (max-width: 600px) {
-  .parallax-container {
-    height: 500px; } }
-@media (max-width: 400px) {
-  .parallax-container {
-    height: 333px; } }
+.parallax-container {
+  height: 84vh; }
+  @media (max-width: 800px) {
+    .parallax-container {
+      height: 75vh; } }
+  @media (max-width: 600px) {
+    .parallax-container {
+      height: 75vh; } }
+  @media (max-width: 400px) {
+    .parallax-container {
+      height: 50vh; } }
 
 header {
   height: 84vh;
@@ -519,10 +532,10 @@ header {
     .hero-text-hold {
       width: 80vw;
       margin-top: 6vh; } }
-  @media (max-width: 350px) {
+  @media (max-width: 375px) {
     .hero-text-hold {
       width: 90vw;
-      margin-top: 1vh; } }
+      margin-top: -2vh; } }
   .hero-text-hold img {
     width: 75%;
     max-width: 295px;

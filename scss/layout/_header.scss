@@ -5,12 +5,19 @@
 }
 
 .parallax-container {
+  height: 84vh;
+  @media (max-width: 800px) {
+    height: 75vh;
+  }
   @media (max-width: 600px) {
-    height: 500px;
+    height: 75vh;
   }
   @media (max-width: 400px) {
-    height: 333px;
+    height: 50vh;
   }
+  // @media (max-width: 320px) {
+  //   height: 290px;
+  // }
 }
 
 header {
@@ -105,9 +112,9 @@ header {
     width: 80vw;
     margin-top: 6vh;
   }
-  @media (max-width: 350px) {
+  @media (max-width: 375px) {
     width: 90vw;
-    margin-top:1vh;
+    margin-top: -2vh;
   }
 
   // .hero-text {
