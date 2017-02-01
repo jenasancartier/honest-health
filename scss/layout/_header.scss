@@ -2,10 +2,16 @@
 .logo {
   height: 10vh;
   margin: 0;
+  .logo-container {
+    width: 60px;
+    height: auto;
+  }
 }
 
+
+
 .parallax-container {
-  height: 84vh;
+  height: 78vh;
   @media (max-width: 800px) {
     height: 75vh;
   }
@@ -15,8 +21,8 @@
   @media (max-width: 400px) {
     height: 50vh;
   }
-  // @media (max-width: 320px) {
-  //   height: 290px;
+  // .parallax img {
+  //   width: 100vw !important;
   // }
 }
 
