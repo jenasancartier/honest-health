@@ -494,6 +494,12 @@ ul.main-links2 {
     .strain-section .strain-image img {
       width: 100%; }
 
+h4 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-top: -80px;
+  margin-bottom: 50px; }
+
 footer {
   text-align: center;
   font-size: 11px;
