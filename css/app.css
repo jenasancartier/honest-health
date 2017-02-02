@@ -513,7 +513,11 @@ footer {
     height: auto; }
 
 .parallax-container {
-  height: 78vh; }
+  height: 78vh;
+  background: -webkit-linear-gradient(top, rgba(76, 191, 139, 0.4) 0%, rgba(21, 90, 151, 0.4) 60%);
+  background: -moz-linear-gradient(top, rgba(76, 191, 139, 0.4) 0%, rgba(21, 90, 151, 0.4) 60%);
+  background: -o-linear-gradient(top, rgba(76, 191, 139, 0.4) 0%, rgba(21, 90, 151, 0.4) 60%);
+  background: linear-gradient(top, rgba(76, 191, 139, 0.4) 0%, rgba(21, 90, 151, 0.4) 60%); }
   @media (max-width: 800px) {
     .parallax-container {
       height: 75vh; } }
@@ -526,19 +530,13 @@ footer {
 
 header {
   height: 84vh;
-  position: relative;
-  background: -webkit-linear-gradient(top, rgba(76, 191, 139, 0.4) 0%, rgba(21, 90, 151, 0.4) 60%);
-  background: -moz-linear-gradient(top, rgba(76, 191, 139, 0.4) 0%, rgba(21, 90, 151, 0.4) 60%);
-  background: -o-linear-gradient(top, rgba(76, 191, 139, 0.4) 0%, rgba(21, 90, 151, 0.4) 60%);
-  background: linear-gradient(top, rgba(76, 191, 139, 0.4) 0%, rgba(21, 90, 151, 0.4) 60%); }
+  position: relative; }
   @media (max-width: 800px) {
     header {
       height: 75vh; } }
   @media (max-width: 400px) {
     header {
       height: 50vh; } }
-  header img {
-    padding: 35px; }
 
 .new-text {
   font-family: 'Raleway', sans-serif;
@@ -598,7 +596,7 @@ header {
   @media (max-width: 800px) {
     .hero-text-hold {
       width: 60vw;
-      margin-top: 5vh; } }
+      margin-top: -4vh; } }
   @media (max-width: 600px) {
     .hero-text-hold {
       width: 80vw;
