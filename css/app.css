@@ -372,10 +372,10 @@ ul.main-links2 {
         width: 100%;
         left: 0; }
 
-.strains-top {
+.page-top {
   display: block;
   margin: auto; }
-  .strains-top h5 {
+  .page-top h5 {
     font-family: 'Raleway', sans-serif;
     font-size: 13px;
     font-weight: 800;
@@ -385,7 +385,7 @@ ul.main-links2 {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: 50px; }
-  .strains-top .underline {
+  .page-top .underline {
     height: 4px;
     width: 45px;
     display: block;
