@@ -414,34 +414,36 @@ ul.main-links2 {
     height: 400px;
     margin-bottom: 20px;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    position: relative; }
     @media (max-width: 680px) {
       .strain-section .row {
         flex-direction: column; } }
     .strain-section .row:nth-of-type(odd) {
       flex-direction: row-reverse;
       width: 100vw;
-      z-index: -1;
-      position: relative; }
+      position: relative;
+      justify-content: space-between; }
       @media (max-width: 680px) {
         .strain-section .row:nth-of-type(odd) {
           flex-direction: column; } }
-      .strain-section .row:nth-of-type(odd):after {
-        content: '';
-        width: 100vw;
-        background-color: #f0f0f0;
-        position: absolute;
-        height: 100%;
-        z-index: -999; }
+      @media (min-width: 680px) {
+        .strain-section .row:nth-of-type(odd) .strain-image {
+          position: absolute;
+          left: 0px; } }
       .strain-section .row:nth-of-type(odd) .strain-text {
         float: right;
         text-align: right;
         margin: 20px; }
         @media (max-width: 680px) {
           .strain-section .row:nth-of-type(odd) .strain-text {
-            text-align: center; } }
-    .strain-section .row:nth-of-type(even) .strain-image img {
-      margin-right: -63px; }
+            text-align: center;
+            float: none;
+            margin: 0px; } }
+    @media (min-width: 680px) {
+      .strain-section .row:nth-of-type(even) .strain-image {
+        position: absolute;
+        right: 0px; } }
     .strain-section .row .strain-text h5 {
       font-family: 'Raleway', sans-serif; }
     .strain-section .row .strain-text h5 {
@@ -463,11 +465,13 @@ ul.main-links2 {
     flex-basis: 40%;
     max-height: 200px;
     max-width: 200px;
-    margin-right: -105px;
     overflow: hidden; }
     @media (max-width: 680px) {
       .strain-section .strain-image {
         margin: 0px; } }
+    @media (min-width: 680px) {
+      .strain-section .strain-image {
+        max-width: 40%; } }
     .strain-section .strain-image img {
       width: 100%; }
 

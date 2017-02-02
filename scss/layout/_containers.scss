@@ -490,6 +490,7 @@ ul.main-links2 {
     margin-bottom: 20px;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     @media (max-width: 680px) {
       flex-direction: column;
     }
@@ -497,20 +498,30 @@ ul.main-links2 {
       flex-direction: row-reverse;
       // background-color: lighten($moderngreen, 25%);
       width: 100vw;
-      z-index: -1;
       position: relative;
+      justify-content: space-between;
       @media (max-width: 680px) {
         flex-direction: column;
+        // padding-bottom: 50px;
       }
-      &:after {
-        content: '';
-        width: 100vw;
-        // background-color: rgba(0,50,38,0.3);
-        background-color: lighten(gray, 44%);
-        position: absolute;
-        // left: 0px;
-        height: 100%;
-        z-index: -999;
+      // &:after {
+      //   content: '';
+      //   width: 100vw;
+      //   // background-color: rgba(0,50,38,0.3);
+      //   background-color: lighten(gray, 44%);
+      //   position: absolute;
+      //
+      //   height: 100%;
+      //   z-index: -999;
+      //   @media (min-width: 680px) {
+      //     left: 0px;
+      //   }
+      // }
+      .strain-image {
+        @media (min-width: 680px) {
+          position: absolute;
+          left: 0px;
+        }
       }
       .strain-text {
         float: right;
@@ -518,13 +529,17 @@ ul.main-links2 {
         margin: 20px;
         @media (max-width: 680px) {
           text-align: center;
+          float: none;
+          margin: 0px;
         }
       }
     }
     &:nth-of-type(even) {
-      .strain-image img {
-        margin-right: -63px;
-
+      .strain-image {
+        @media (min-width: 680px) {
+          position: absolute;
+          right: 0px;
+        }
       }
     }
     .strain-text {
@@ -558,10 +573,13 @@ ul.main-links2 {
       flex-basis: 40%;
       max-height: 200px;
       max-width: 200px;
-      margin-right: -105px;
+      // margin-right: -105px;
       overflow: hidden;
       @media (max-width: 680px) {
         margin: 0px;
+      }
+      @media (min-width: 680px) {
+        max-width: 40%;
       }
       img {
         width: 100%;
