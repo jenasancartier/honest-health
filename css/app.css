@@ -427,6 +427,18 @@ ul.main-links2 {
       @media (max-width: 680px) {
         .strain-section .row:nth-of-type(odd) {
           flex-direction: column; } }
+      .strain-section .row:nth-of-type(odd):after {
+        content: '';
+        width: 100vw;
+        background-color: #f0f0f0;
+        position: absolute;
+        top: -17px;
+        height: 105%;
+        z-index: -999; }
+        @media (min-width: 680px) {
+          .strain-section .row:nth-of-type(odd):after {
+            left: 50%;
+            transform: translate(-50%, 0); } }
       @media (min-width: 680px) {
         .strain-section .row:nth-of-type(odd) .strain-image {
           position: absolute;
@@ -468,10 +480,13 @@ ul.main-links2 {
     overflow: hidden; }
     @media (max-width: 680px) {
       .strain-section .strain-image {
-        margin: 0px; } }
+        margin: 0px;
+        position: absolute;
+        top: 43%; } }
     @media (min-width: 680px) {
       .strain-section .strain-image {
-        max-width: 40%; } }
+        max-width: 40%;
+        max-height: 300px; } }
     .strain-section .strain-image img {
       width: 100%; }
 
