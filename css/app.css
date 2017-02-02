@@ -466,7 +466,9 @@ ul.main-links2 {
       color: gray; }
     @media (max-width: 680px) {
       .strain-section .row .strain-text {
-        text-align: center; } }
+        text-align: center; }
+        .strain-section .row .strain-text p {
+          font-size: 12px; } }
   .strain-section .strain-column {
     display: flex;
     flex-direction: row;
@@ -482,7 +484,9 @@ ul.main-links2 {
       .strain-section .strain-image {
         margin: 0px;
         position: absolute;
-        top: 43%; } }
+        bottom: 10%;
+        max-height: 50%;
+        max-width: 50%; } }
     @media (min-width: 680px) {
       .strain-section .strain-image {
         max-width: 40%;

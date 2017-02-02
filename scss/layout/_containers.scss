@@ -555,6 +555,9 @@ ul.main-links2 {
       }
       @media (max-width: 680px) {
         text-align: center;
+        p {
+          font-size: 12px;
+        }
       }
     }
   }
@@ -578,7 +581,9 @@ ul.main-links2 {
       @media (max-width: 680px) {
         margin: 0px;
         position: absolute;
-        top: 43%;
+        bottom: 10%;
+        max-height: 50%;
+        max-width: 50%;
       }
       @media (min-width: 680px) {
         max-width: 40%;
