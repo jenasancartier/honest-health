@@ -56,19 +56,19 @@ header {
   text-align: left;
   text-size: 50px;
   transition: 0.5s;
-  transition-timing-function: ease-out;
+  // transition-timing-function: ease-out;
   -webkit-animation-name: rise;
   -webkit-animation-duration: 3s;
-  -webkit-animation-delay: .001s;
+  // -webkit-animation-delay: .001s;
   -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: cubic-bezier(0.05, 0.99, 0.55, 1);
+  // -webkit-animation-timing-function: cubic-bezier(0.05, 0.99, 0.55, 1);
   -webkit-animation-fill-mode: forwards;
-  animation-name: rise;
-  animation-duration: 3s;
-  animation-delay: .001s;
-  animation-iteration-count: 1;
-  animation-timing-function: cubic-bezier(0.05, 0.99, 0.55, 1);
-  animation-fill-mode: forwards;
+  // animation-name: rise;
+  // animation-duration: 3s;
+  // animation-delay: .001s;
+  // animation-iteration-count: 1;
+  // animation-timing-function: cubic-bezier(0.05, 0.99, 0.55, 1);
+  // animation-fill-mode: forwards;
   @media (max-width: 800px) {
     font-size: 45px;
   }
