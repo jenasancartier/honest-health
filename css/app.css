@@ -294,31 +294,29 @@ div.parallax-container.footer {
   .logo a img {
     height: 40px;
     width: auto;
-    margin-top: 3px; }
+    margin: 10px; }
     @media (max-width: 800px) {
       .logo a img {
         height: 35px;
-        width: auto;
-        margin-top: 6px; } }
+        width: auto; } }
     @media (min-width: 1440px) {
       .logo a img {
-        height: 60px;
-        margin-top: 3px; } }
+        height: 60px; } }
   .logo a h4 {
     font-family: 'Yeseva One', cursive;
-    color: black;
+    color: #4CBF8B;
     font-size: 22px;
     padding: 3px;
-    margin-top: 12px; }
+    margin-top: 16px; }
     @media (max-width: 800px) {
       .logo a h4 {
-        font-size: 18px;
-        margin-top: 13px;
+        font-size: 22px;
+        margin-top: 15px;
         padding: 3px; } }
     @media (min-width: 1440px) {
       .logo a h4 {
         font-size: 28px;
-        margin-top: 20px; } }
+        margin-top: 25px; } }
 
 .link-container {
   height: 100px; }
