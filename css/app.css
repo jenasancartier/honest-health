@@ -29,9 +29,6 @@ body {
       text-align: center;
       padding: 30px;
       z-index: 99; }
-      @media (max-width: 800px) {
-        .icon-section .icon-container .icon-column {
-          margin-top: 60px; } }
       @media (max-width: 560px) {
         .icon-section .icon-container .icon-column {
           -ms-flex-wrap: wrap;
