@@ -392,26 +392,27 @@ ul.main-links2 {
   letter-spacing: 5px; }
 
 .strain-section {
-  width: 75vw;
+  width: 100vw;
   display: block;
   margin: auto;
   margin-top: 30px;
   z-index: 9999; }
   .strain-section .row {
     display: flex;
+    width: 100vw;
+    max-width: 800px;
     height: 400px;
     margin-bottom: 20px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     position: relative; }
     @media (max-width: 680px) {
       .strain-section .row {
         flex-direction: column; } }
     .strain-section .row:nth-of-type(odd) {
       flex-direction: row-reverse;
-      width: 100vw;
       position: relative;
-      justify-content: space-between; }
+      justify-content: center; }
       @media (max-width: 680px) {
         .strain-section .row:nth-of-type(odd) {
           flex-direction: column; } }
@@ -436,10 +437,6 @@ ul.main-links2 {
             text-align: center;
             float: none;
             margin: 0px; } }
-    @media (min-width: 680px) {
-      .strain-section .row:nth-of-type(even) .strain-image {
-        position: absolute;
-        right: 0px; } }
     .strain-section .row .strain-text h5 {
       font-family: 'Raleway', sans-serif; }
     .strain-section .row .strain-text h5 {
@@ -459,22 +456,20 @@ ul.main-links2 {
     flex-wrap: wrap; }
     .strain-section .strain-column .strain-details {
       flex-basis: 40%; }
+      @media (max-width: 680px) {
+        .strain-section .strain-column .strain-details {
+          flex-basis: 23%;
+          padding: 0 50px; } }
   .strain-section .strain-image {
     flex-basis: 40%;
     max-height: 300px;
     max-width: 300px;
+    margin: 25px;
     overflow: hidden; }
     @media (max-width: 680px) {
       .strain-section .strain-image {
-        margin: 0px;
-        position: absolute;
-        bottom: 10%;
         max-height: 50%;
         max-width: 50%; } }
-    @media (min-width: 680px) {
-      .strain-section .strain-image {
-        max-width: 300px;
-        max-height: 300px; } }
     .strain-section .strain-image img {
       width: 100%; }
 

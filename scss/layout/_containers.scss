@@ -478,17 +478,19 @@ ul.main-links2 {
 }
 
 .strain-section {
-  width: 75vw;
+  width: 100vw;
   display: block;
   margin: auto;
   margin-top: 30px;
   z-index: 9999;
   .row {
     display: flex;
+    width: 100vw;
+    max-width: 800px;
     height: 400px;
     margin-bottom: 20px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     position: relative;
     @media (max-width: 680px) {
       flex-direction: column;
@@ -496,9 +498,9 @@ ul.main-links2 {
     &:nth-of-type(odd) {
       flex-direction: row-reverse;
       // background-color: lighten($moderngreen, 25%);
-      width: 100vw;
+      // width: 100vw;
       position: relative;
-      justify-content: space-between;
+      justify-content: center;
       @media (max-width: 680px) {
         flex-direction: column;
         // padding-bottom: 50px;
@@ -533,14 +535,14 @@ ul.main-links2 {
         }
       }
     }
-    &:nth-of-type(even) {
-      .strain-image {
-        @media (min-width: 680px) {
-          position: absolute;
-          right: 0px;
-        }
-      }
-    }
+    // &:nth-of-type(even) {
+    //   .strain-image {
+    //     @media (min-width: 680px) {
+    //       position: absolute;
+    //       right: 0px;
+    //     }
+    //   }
+    // }
     .strain-text {
       h5 {
         font-family: 'Raleway', sans-serif;
@@ -564,33 +566,34 @@ ul.main-links2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    // max-width: 800px;
     .strain-details {
       flex-basis: 40%;
+      @media (max-width: 680px) {
+        flex-basis: 23%;
+        padding: 0 50px;
       }
-      // @media (max-width: 640px) {
-      //   flex-direction: column;
-      // }
     }
+  }
     .strain-image {
       flex-basis: 40%;
       max-height: 300px;
       max-width: 300px;
-      // margin-right: -105px;
+      margin: 25px;
       overflow: hidden;
       @media (max-width: 680px) {
-        margin: 0px;
-        position: absolute;
-        bottom: 10%;
+        // margin: 0px;
+        // position: absolute;
+        // bottom: 10%;
         max-height: 50%;
         max-width: 50%;
       }
-      @media (min-width: 680px) {
-        max-width: 300px;
-        max-height: 300px;
-      }
+      // @media (min-width: 680px) {
+      //   max-width: 300px;
+      //   max-height: 300px;
+      // }
       img {
         width: 100%;
-        // height: 100%;
       }
     }
   }
