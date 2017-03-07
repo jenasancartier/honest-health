@@ -1,10 +1,14 @@
 
 .logo {
   height: 10vh;
+  min-height: 70px;
   margin: 0;
   .logo-container {
-    width: 60px;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -54,7 +58,7 @@ header {
   color: rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
   text-align: left;
-  text-size: 50px;
+  font-size: 66px;
   transition: 0.5s;
   // transition-timing-function: ease-out;
   -webkit-animation-name: rise;
@@ -85,31 +89,27 @@ header {
 
 
 .hero-text-parent {
-  // display: flex;
-  // flex-grow: 1;
-  // justify-content: center;
   position: absolute;
-  top: 10px;
   left: 50%;
-  transform: translate(-50%, 0);
-  overflow: visible;
+  top: 41%;
+  transform: translate(-50%, -50%);
 }
 .hero-text-hold {
-  height: 50%;
-  padding: 25px;
-  margin-top: 1vh;
+  // height: 50%;
+  // padding: 25px;
+  // margin-top: 7vh;
   width: 50vw;
   @media (max-width: 800px) {
     width: 60vw;
-    margin-top: -4vh;
+    // margin-top: 5vh;
   }
   @media (max-width: 600px) {
     width: 80vw;
-    margin-top: 6vh;
+    // margin-top: 6vh;
   }
   @media (max-width: 375px) {
     width: 90vw;
-    margin-top: -2vh;
+    // margin-top: 1vh;
   }
 
   // .hero-text {

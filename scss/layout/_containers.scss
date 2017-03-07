@@ -332,20 +332,20 @@ div.parallax-container.footer  {
 ///////////////// strains.html /////////////////////
 .logo a {
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  margin-top: 10px;
-  position: absolute;
+  align-items: center;
+  // justify-content: center;
+  // margin-top: 20px;
+  // display: flex;
+  // justify-content: center;
+  // width: 50%;
+  // left: 50%;
+  // transform: translate(-50%, 0);
+  // margin-top: 10px;
+  // position: absolute;
   img {
-    height: 40px;
+    height: 44px;
     width: auto;
-    // margin-top: 3px;
-    margin: 10px;
+    margin: 12px;
     @media (max-width: 800px) {
       height: 35px;
       width: auto;
@@ -357,19 +357,17 @@ div.parallax-container.footer  {
     }
   }
   h4 {
-    font-family: 'Yeseva One', cursive;
-    color: $moderngreen;
+    font-family: 'Raleway', sans-serif;
+    color: $charcoal;
     font-size: 22px;
-    padding: 3px;
-    margin-top: 16px;
+    margin: 0px;
+    margin-top: 7px;
     @media (max-width: 800px) {
       font-size: 22px;
-      margin-top: 15px;
       padding: 3px;
     }
     @media (min-width: 1440px) {
       font-size: 28px;
-      margin-top: 25px;
     }
   }
 }
@@ -518,12 +516,12 @@ ul.main-links2 {
           transform: translate(-50%,0);
         }
       }
-      .strain-image {
-        @media (min-width: 680px) {
-          position: absolute;
-          left: 0px;
-        }
-      }
+      // .strain-image {
+      //   @media (min-width: 680px) {
+      //     position: absolute;
+      //     left: 0px;
+      //   }
+      // }
       .strain-text {
         float: right;
         text-align: right;
@@ -575,8 +573,8 @@ ul.main-links2 {
     }
     .strain-image {
       flex-basis: 40%;
-      max-height: 200px;
-      max-width: 200px;
+      max-height: 300px;
+      max-width: 300px;
       // margin-right: -105px;
       overflow: hidden;
       @media (max-width: 680px) {
@@ -587,7 +585,7 @@ ul.main-links2 {
         max-width: 50%;
       }
       @media (min-width: 680px) {
-        max-width: 40%;
+        max-width: 300px;
         max-height: 300px;
       }
       img {

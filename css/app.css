@@ -282,19 +282,11 @@ div.parallax-container.footer {
 
 .logo a {
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  margin-top: 10px;
-  position: absolute; }
+  align-items: center; }
   .logo a img {
-    height: 40px;
+    height: 44px;
     width: auto;
-    margin: 10px; }
+    margin: 12px; }
     @media (max-width: 800px) {
       .logo a img {
         height: 35px;
@@ -303,20 +295,18 @@ div.parallax-container.footer {
       .logo a img {
         height: 60px; } }
   .logo a h4 {
-    font-family: 'Yeseva One', cursive;
-    color: #4CBF8B;
+    font-family: 'Raleway', sans-serif;
+    color: #5B5858;
     font-size: 22px;
-    padding: 3px;
-    margin-top: 16px; }
+    margin: 0px;
+    margin-top: 7px; }
     @media (max-width: 800px) {
       .logo a h4 {
         font-size: 22px;
-        margin-top: 15px;
         padding: 3px; } }
     @media (min-width: 1440px) {
       .logo a h4 {
-        font-size: 28px;
-        margin-top: 25px; } }
+        font-size: 28px; } }
 
 .link-container {
   height: 100px; }
@@ -437,10 +427,6 @@ ul.main-links2 {
           .strain-section .row:nth-of-type(odd):after {
             left: 50%;
             transform: translate(-50%, 0); } }
-      @media (min-width: 680px) {
-        .strain-section .row:nth-of-type(odd) .strain-image {
-          position: absolute;
-          left: 0px; } }
       .strain-section .row:nth-of-type(odd) .strain-text {
         float: right;
         text-align: right;
@@ -475,8 +461,8 @@ ul.main-links2 {
       flex-basis: 40%; }
   .strain-section .strain-image {
     flex-basis: 40%;
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 300px;
+    max-width: 300px;
     overflow: hidden; }
     @media (max-width: 680px) {
       .strain-section .strain-image {
@@ -487,7 +473,7 @@ ul.main-links2 {
         max-width: 50%; } }
     @media (min-width: 680px) {
       .strain-section .strain-image {
-        max-width: 40%;
+        max-width: 300px;
         max-height: 300px; } }
     .strain-section .strain-image img {
       width: 100%; }
@@ -511,10 +497,14 @@ footer {
 
 .logo {
   height: 10vh;
+  min-height: 70px;
   margin: 0; }
   .logo .logo-container {
-    width: 60px;
-    height: auto; }
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
 
 .parallax-container {
   height: 78vh;
@@ -548,7 +538,7 @@ header {
   color: rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
   text-align: left;
-  text-size: 50px;
+  font-size: 66px;
   transition: 0.5s;
   -webkit-animation-name: rise;
   -webkit-animation-duration: 3s;
@@ -578,28 +568,21 @@ header {
     text-shadow: 200px 200px 200px rgba(255, 255, 255, 0); } }
 .hero-text-parent {
   position: absolute;
-  top: 10px;
   left: 50%;
-  transform: translate(-50%, 0);
-  overflow: visible; }
+  top: 41%;
+  transform: translate(-50%, -50%); }
 
 .hero-text-hold {
-  height: 50%;
-  padding: 25px;
-  margin-top: 1vh;
   width: 50vw; }
   @media (max-width: 800px) {
     .hero-text-hold {
-      width: 60vw;
-      margin-top: -4vh; } }
+      width: 60vw; } }
   @media (max-width: 600px) {
     .hero-text-hold {
-      width: 80vw;
-      margin-top: 6vh; } }
+      width: 80vw; } }
   @media (max-width: 375px) {
     .hero-text-hold {
-      width: 90vw;
-      margin-top: -2vh; } }
+      width: 90vw; } }
   .hero-text-hold img {
     width: 75%;
     max-width: 295px;
