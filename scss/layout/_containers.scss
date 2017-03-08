@@ -534,6 +534,7 @@ ul.main-links2 {
 
 .strain-section {
   width: 100vw;
+  max-width: 900px;
   display: block;
   margin: auto;
   margin-top: 30px;
@@ -543,7 +544,6 @@ ul.main-links2 {
     display: -ms-flexbox;
     display: flex;
     width: 100vw;
-    max-width: 800px;
     height: 400px;
     margin-bottom: 20px;
     -webkit-box-align: center;
@@ -645,7 +645,6 @@ ul.main-links2 {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    /* max-width: 800px;*/
     .strain-details {
       -ms-flex-preferred-size: 40%;
           flex-basis: 40%;
@@ -664,16 +663,10 @@ ul.main-links2 {
       margin: 25px;
       overflow: hidden;
       @media (max-width: 680px) {
-        /* margin: 0px;*/
-        /* position: absolute;*/
-        /* bottom: 10%;*/
+        // margin-top: 30px;
         max-height: 50%;
         max-width: 50%;
       }
-      /* @media (min-width: 680px) {*/
-      /*   max-width: 300px;*/
-      /*   max-height: 300px;*/
-      /* }*/
       img {
         width: 100%;
       }

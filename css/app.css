@@ -475,6 +475,7 @@ ul.main-links2 {
 
 .strain-section {
   width: 100vw;
+  max-width: 900px;
   display: block;
   margin: auto;
   margin-top: 30px;
@@ -484,7 +485,6 @@ ul.main-links2 {
     display: -ms-flexbox;
     display: flex;
     width: 100vw;
-    max-width: 800px;
     height: 400px;
     margin-bottom: 20px;
     -webkit-box-align: center;
@@ -576,8 +576,7 @@ ul.main-links2 {
     -ms-flex-direction: row;
     flex-direction: row;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    /* max-width: 800px;*/ }
+    flex-wrap: wrap; }
     .strain-section .strain-column .strain-details {
       -ms-flex-preferred-size: 40%;
       flex-basis: 40%; }
@@ -592,16 +591,9 @@ ul.main-links2 {
     max-height: 300px;
     max-width: 300px;
     margin: 25px;
-    overflow: hidden;
-    /* @media (min-width: 680px) {*/
-    /*   max-width: 300px;*/
-    /*   max-height: 300px;*/
-    /* }*/ }
+    overflow: hidden; }
     @media (max-width: 680px) {
       .strain-section .strain-image {
-        /* margin: 0px;*/
-        /* position: absolute;*/
-        /* bottom: 10%;*/
         max-height: 50%;
         max-width: 50%; } }
     .strain-section .strain-image img {
@@ -682,19 +674,18 @@ header {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding: 0 5px 25px;
-  /* transition-timing-function: ease-out;*/
+  transition-timing-function: ease-out;
   -webkit-animation-name: rise;
   -webkit-animation-duration: 2s;
   /* -webkit-animation-delay: .001s;*/
   -webkit-animation-iteration-count: 1;
   /* -webkit-animation-timing-function: cubic-bezier(0.05, 0.99, 0.55, 1);*/
   -webkit-animation-fill-mode: forwards;
-  /* animation-name: rise;*/
-  /* animation-duration: 3s;*/
-  /* animation-delay: .001s;*/
-  /* animation-iteration-count: 1;*/
-  /* animation-timing-function: cubic-bezier(0.05, 0.99, 0.55, 1);*/
-  /* animation-fill-mode: forwards;*/ }
+  animation-name: rise;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.05, 0.99, 0.55, 1);
+  animation-fill-mode: forwards; }
   @media (max-width: 800px) {
     .new-text {
       font-size: 45px; } }
