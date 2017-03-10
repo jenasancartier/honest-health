@@ -662,6 +662,7 @@ header {
 .new-text {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
+  opacity: 0;
   color: rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
   text-align: left;
@@ -672,12 +673,13 @@ header {
   transition-timing-function: ease-out;
   -webkit-animation-name: rise;
   -webkit-animation-duration: 3s;
-  /* -webkit-animation-delay: .001s;*/
+  -webkit-animation-delay: .4s;
   -webkit-animation-iteration-count: 1;
   /* -webkit-animation-timing-function: cubic-bezier(0.05, 0.99, 0.55, 1);*/
   -webkit-animation-fill-mode: forwards;
   animation-name: rise;
   animation-duration: 3s;
+  animation-delay: .4s;
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0.05, 0.99, 0.55, 1);
   animation-fill-mode: forwards; }
