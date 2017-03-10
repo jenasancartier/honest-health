@@ -637,7 +637,7 @@ ul.main-links2 {
     margin-bottom: 50px;
   }
 
-///////////////////////////////// about.html, dispensaries.html
+///////////////////////////////// about.html, dispensaries.html, contact.html
 .content-container {
   width: 100%;
   max-width: 900px;
@@ -660,5 +660,10 @@ ul.main-links2 {
 
 .dispensaries-hero {
   background-image: url("../img/dispensaries-hero.jpg");
+  @include contentHero;
+}
+
+.contact-hero {
+  background-image: url("../img/contact-hero.jpg");
   @include contentHero;
 }
