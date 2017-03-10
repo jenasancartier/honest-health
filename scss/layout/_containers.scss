@@ -1,4 +1,4 @@
-
+//////////////////////// index.html
 .icon-section {
   width: 85vw;
   z-index: 99;
@@ -57,16 +57,12 @@
 .mission-container {
   margin-top: 20px;
   margin-bottom: 40px;
-  /* background: -webkit-linear-gradient(220deg, rgba(29,151,188,.7) 0%, rgba(76,191,139,.7) 60%, rgba(35,184,187,.5) 90%);*/
   .mission-section {
     display: block;
     margin: auto;
     width: 95vw;
     padding: 35px;
     h5 {
-      /* margin-left: 30px;*/
-      /* position: absolute;*/
-      /* left: 50%;*/
       -webkit-transform: translate(5%,0);
               transform: translate(5%,0);
       color: lighten(black, 15%);
@@ -311,12 +307,6 @@ div.parallax-container.footer  {
   margin-top: 50px;
   height: auto;
 
-  /* &::after {*/
-  /*   @extend %after;*/
-  /*   background-image: url("../img/wood-bg.jpg");*/
-  /*   background-position: center;*/
-  /*   background-size: cover;*/
-  /* }*/
   .about-section {
     padding: 45px;
     width: 85vw;
@@ -371,7 +361,7 @@ div.parallax-container.footer  {
 }
 
 
-/*/////////////// strains.html /////////////////////*/
+////////////////////////////////////// strains.html
 .logo a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -379,15 +369,6 @@ div.parallax-container.footer  {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* justify-content: center;*/
-  /* margin-top: 20px;*/
-  /* display: flex;*/
-  /* justify-content: center;*/
-  /* width: 50%;*/
-  /* left: 50%;*/
-  /* transform: translate(-50%, 0);*/
-  /* margin-top: 10px;*/
-  /* position: absolute;*/
   img {
     height: 44px;
     width: auto;
@@ -422,11 +403,6 @@ div.parallax-container.footer  {
   height: 100px;
 }
 
-
-/* .parallax-container {*/
-/*   height: 575px !important;*/
-/* }*/
-
 ul.main-links2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -453,7 +429,6 @@ ul.main-links2 {
     display: none;
   }
   li {
-    /* color: $moderngreen;*/
     color: white;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -483,7 +458,6 @@ ul.main-links2 {
     }
     &:hover {
       cursor: pointer;
-      /* background: rgba(76, 191, 139, .1);*/
       background: rgba(255,255,255,.1);
       &:after {
         width: 100%;
@@ -494,7 +468,6 @@ ul.main-links2 {
 }
 
 .page-top {
-  /* width: 30px;*/
   display: block;
   margin: auto;
   h5 {
@@ -520,9 +493,9 @@ ul.main-links2 {
 }
 
 .page-title {
+  height: 115px;
   h2 {
-    margin: 45px 0 65px;
-    height: 115px;
+    margin: 45px 0;
     font-weight: 800;
     text-align: center;
     font-family: 'Raleway', sans-serif;
@@ -564,8 +537,6 @@ ul.main-links2 {
       -webkit-box-direction: reverse;
           -ms-flex-direction: row-reverse;
               flex-direction: row-reverse;
-      /* background-color: lighten($moderngreen, 25%);*/
-      /* width: 100vw;*/
       position: relative;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
@@ -575,7 +546,6 @@ ul.main-links2 {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        /* padding-bottom: 50px;*/
       }
       &:after {
         content: '';
@@ -591,12 +561,6 @@ ul.main-links2 {
                   transform: translate(-50%,0);
         }
       }
-      /* .strain-image {*/
-      /*   @media (min-width: 680px) {*/
-      /*     position: absolute;*/
-      /*     left: 0px;*/
-      /*   }*/
-      /* }*/
       .strain-text {
         float: right;
         text-align: right;
@@ -608,14 +572,6 @@ ul.main-links2 {
         }
       }
     }
-    /* &:nth-of-type(even) {*/
-    /*   .strain-image {*/
-    /*     @media (min-width: 680px) {*/
-    /*       position: absolute;*/
-    /*       right: 0px;*/
-    /*     }*/
-    /*   }*/
-    /* }*/
     .strain-text {
       h5 {
         font-family: 'Raleway', sans-serif;
@@ -673,10 +629,37 @@ ul.main-links2 {
     }
   }
 
-  /*////////// dispensaries*/
+///////////////////////////////// dispensaries
   h4 {
     text-align: center;
     font-family: 'Raleway', sans-serif;
     margin-top: -80px;
     margin-bottom: 50px;
   }
+
+///////////////////////////////// about.html
+.content-container {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: auto;
+}
+
+.content-hero {
+  margin: auto;
+  width: 100%;
+  height: 300px;
+  background-image: url("../img/about-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 50px;
+}
+
+.content-description {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 50px;
+}

@@ -49,17 +49,13 @@ body {
 
 .mission-container {
   margin-top: 20px;
-  margin-bottom: 40px;
-  /* background: -webkit-linear-gradient(220deg, rgba(29,151,188,.7) 0%, rgba(76,191,139,.7) 60%, rgba(35,184,187,.5) 90%);*/ }
+  margin-bottom: 40px; }
   .mission-container .mission-section {
     display: block;
     margin: auto;
     width: 95vw;
     padding: 35px; }
     .mission-container .mission-section h5 {
-      /* margin-left: 30px;*/
-      /* position: absolute;*/
-      /* left: 50%;*/
       -webkit-transform: translate(5%, 0);
       transform: translate(5%, 0);
       color: #262626;
@@ -275,13 +271,7 @@ div.parallax-container.footer {
   background: linear-gradient(top, rgba(76, 191, 139, 0.5) 0%, rgba(21, 90, 151, 0.5) 60%);
   position: relative;
   margin-top: 50px;
-  height: auto;
-  /* &::after {*/
-  /*   @extend %after;*/
-  /*   background-image: url("../img/wood-bg.jpg");*/
-  /*   background-position: center;*/
-  /*   background-size: cover;*/
-  /* }*/ }
+  height: auto; }
   .about-container .about-section {
     padding: 45px;
     width: 85vw;
@@ -329,23 +319,13 @@ div.parallax-container.footer {
           .about-container .about-section .grower-details p {
             font-size: 13px; } }
 
-/*/////////////// strains.html /////////////////////*/
 .logo a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  /* justify-content: center;*/
-  /* margin-top: 20px;*/
-  /* display: flex;*/
-  /* justify-content: center;*/
-  /* width: 50%;*/
-  /* left: 50%;*/
-  /* transform: translate(-50%, 0);*/
-  /* margin-top: 10px;*/
-  /* position: absolute;*/ }
+  align-items: center; }
   .logo a img {
     height: 44px;
     width: auto;
@@ -376,9 +356,6 @@ div.parallax-container.footer {
 .link-container {
   height: 100px; }
 
-/* .parallax-container {*/
-/*   height: 575px !important;*/
-/* }*/
 ul.main-links2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -405,7 +382,6 @@ ul.main-links2 {
     ul.main-links2 {
       display: none; } }
   ul.main-links2 li {
-    /* color: $moderngreen;*/
     color: white;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -434,14 +410,12 @@ ul.main-links2 {
       background: white; }
     ul.main-links2 li:hover {
       cursor: pointer;
-      /* background: rgba(76, 191, 139, .1);*/
       background: rgba(255, 255, 255, 0.1); }
       ul.main-links2 li:hover:after {
         width: 100%;
         left: 0; }
 
 .page-top {
-  /* width: 30px;*/
   display: block;
   margin: auto; }
   .page-top h5 {
@@ -463,15 +437,16 @@ ul.main-links2 {
     margin-top: -10px;
     background-color: #e6e6e6; }
 
-.page-title h2 {
-  margin: 45px 0 65px;
-  height: 115px;
-  font-weight: 800;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  font-size: 40px;
-  text-transform: uppercase;
-  letter-spacing: 5px; }
+.page-title {
+  height: 115px; }
+  .page-title h2 {
+    margin: 45px 0;
+    font-weight: 800;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 5px; }
 
 .strain-section {
   width: 100vw;
@@ -493,15 +468,7 @@ ul.main-links2 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    position: relative;
-    /* &:nth-of-type(even) {*/
-    /*   .strain-image {*/
-    /*     @media (min-width: 680px) {*/
-    /*       position: absolute;*/
-    /*       right: 0px;*/
-    /*     }*/
-    /*   }*/
-    /* }*/ }
+    position: relative; }
     @media (max-width: 680px) {
       .strain-section .row {
         -webkit-box-orient: vertical;
@@ -513,25 +480,16 @@ ul.main-links2 {
       -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
       flex-direction: row-reverse;
-      /* background-color: lighten($moderngreen, 25%);*/
-      /* width: 100vw;*/
       position: relative;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center;
-      /* .strain-image {*/
-      /*   @media (min-width: 680px) {*/
-      /*     position: absolute;*/
-      /*     left: 0px;*/
-      /*   }*/
-      /* }*/ }
+      justify-content: center; }
       @media (max-width: 680px) {
         .strain-section .row:nth-of-type(odd) {
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
           -ms-flex-direction: column;
-          flex-direction: column;
-          /* padding-bottom: 50px;*/ } }
+          flex-direction: column; } }
       .strain-section .row:nth-of-type(odd):after {
         content: '';
         width: 100vw;
@@ -599,11 +557,33 @@ ul.main-links2 {
     .strain-section .strain-image img {
       width: 100%; }
 
-/*////////// dispensaries*/
 h4 {
   text-align: center;
   font-family: 'Raleway', sans-serif;
   margin-top: -80px;
+  margin-bottom: 50px; }
+
+.content-container {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: auto; }
+
+.content-hero {
+  margin: auto;
+  width: 100%;
+  height: 300px;
+  background-image: url("../img/about-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 50px; }
+
+.content-description {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
   margin-bottom: 50px; }
 
 footer {
@@ -676,7 +656,7 @@ header {
   padding: 0 5px 25px;
   transition-timing-function: ease-out;
   -webkit-animation-name: rise;
-  -webkit-animation-duration: 2s;
+  -webkit-animation-duration: 3;
   /* -webkit-animation-delay: .001s;*/
   -webkit-animation-iteration-count: 1;
   /* -webkit-animation-timing-function: cubic-bezier(0.05, 0.99, 0.55, 1);*/
