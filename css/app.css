@@ -3,7 +3,6 @@ body {
 
 .icon-section {
   width: 85vw;
-  z-index: 99;
   display: block;
   margin: auto; }
   @media (max-width: 800px) {
