@@ -266,6 +266,9 @@ transition: opacity .25s ease;
   opacity: .9;
   visibility: visible;
   height: 100%;
+  @media screen and (min-width: 600px) {
+    display: none;
+  }
 }
 .overlay.open li {
   -webkit-animation: fadeInRight .5s ease forwards;
@@ -352,6 +355,7 @@ ul.dropdown-links li a {
   -webkit-transition: .35s;
   transition: .35s;
 }
+
 
 @-webkit-keyframes fadeInRight {
   0% {
