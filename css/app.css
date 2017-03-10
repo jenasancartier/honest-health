@@ -168,11 +168,25 @@ body {
       transition: transform 0.5s, -webkit-transform 0.5s; }
       .strain-gallery .strain .strain-info .details-title span {
         font-size: 30px;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 25%;
+        left: 50%;
+        transform: translate(-50%, 0); }
       .strain-gallery .strain .strain-info:hover {
         -webkit-transform: translateY(-250px);
         transform: translateY(-250px);
         cursor: crosshair; }
+      .strain-gallery .strain .strain-info .details-info span:nth-of-type(1) {
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translate(-50%, 0); }
+      .strain-gallery .strain .strain-info .details-info span:nth-of-type(2) {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translate(-50%, 0); }
     .strain-gallery .strain .details-container {
       background-color: rgba(76, 191, 139, 0.7);
       height: 250px;
